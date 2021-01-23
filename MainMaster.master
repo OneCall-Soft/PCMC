@@ -1,0 +1,463 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMaster.master.cs" Inherits="MainMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="google" content="notranslate">
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="favicon.ico">
+
+	<!--Google Font link-->
+	<%-- <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">--%>
+
+	<link href="css/fontawesome.css" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/css/swiper.min.css" />
+	<link href="css/fontawesome.min.css" rel="stylesheet" />
+	<link href="css/brands.css" rel="stylesheet" />
+	<link href="css/brands.min.css" rel="stylesheet" />
+	<link href="css/all.css" rel="stylesheet" />
+	<link href="css/all.min.css" rel="stylesheet" />
+
+	<%-- <link rel="stylesheet" href="assets/css/bootstrap.min.css">--%>
+
+	<link rel="stylesheet" href="assets/css/slider.css">
+
+	<link rel="stylesheet" href="assets/css/a.css">
+	<!--Theme custom css -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<link rel="stylesheet" href="assets/css/style9.css">
+
+	<!--Theme Responsive css-->
+	<link rel="stylesheet" href="assets/css/responsive.css" />
+
+	<script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse">
+	<form id="form1" runat="server">
+		<a class="weatherwidget-io" href="https://forecast7.com/en/18d6373d80/pimpri-chinchwad/" data-label_1="PIMPRI-CHINCHWAD" data-label_2="WEATHER" data-icons="Climacons Animated" data-days="3" data-theme="ruby" data-basecolor="#eb0029" data-shadow="#" data-highcolor="#ffffff" data-lowcolor="#ffffff" data-cloudfill="#ffffff">PIMPRI-CHINCHWAD WEATHER</a>
+
+		<div id="loading">
+			<div id="loading-center">
+				<div id="loading-center-absolute">
+					<div class="object" id="object_one"></div>
+					<div class="object" id="object_two"></div>
+					<div class="object" id="object_three"></div>
+					<div class="object" id="object_four"></div>
+				</div>
+			</div>
+		</div>
+		<section id="home" class="home">
+			<div class="main_home">
+
+
+				<div class="row">
+					<%--header--%>
+					<div class="col-md-12"></div>
+					<div class="col-md-2">
+						<img src="images/logo.png" />
+					</div>
+					<div class="col-md-6 col-lg-offset-1" style="text-align: center; margin-top: 1%;margin-left:8%"">
+						<h4 style="color: #eb0029">SMART CITY KIOSK</h4>
+					</div>
+
+				</div>
+
+				<%--	<div class="row" style="margin-top:5%" >
+			  <hr style="border: 3px solid #eb0029">
+		</div>--%>
+				<hr style="border: 1px solid #eb0029">
+
+
+
+				<div class="row">
+					<%--no use only for home page--%>
+					<%--Content--%>
+					<div class="col-md-12">
+						<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+
+					</div>
+				</div>
+				<div class="row" style="margin-top: 6%">
+					<%--buttons--%>
+					<div class="col-md-12">
+						<div class="col-md-5" style="margin-left: 30%">
+							<div id="LangBtns" style="background-color: #ffffff8f; padding: 20px; border: #000; text-shadow: -1px 3px 5px black;">
+
+								<asp:Button runat="server" OnClick="btnEnglish_Click" Style="background-color: rgba(238, 174, 2, 0.8); font-size: larger; width: 40%; margin-left: 6%" UseSubmitBehavior="false" ID="btnEnglish" value="en-us" class="btn btn button  english" Text="English"></asp:Button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+     
+                  <asp:Button runat="server" OnClick="btnEnglish_Click" Style="background-color: rgba(0, 139, 219, 0.8); font-size: larger; width: 40%;" UseSubmitBehavior="false" ID="btnHindi" value="hi" class="btn btn button hindi" Text="हिन्दी"></asp:Button><br />
+								<br />
+
+								<asp:Button runat="server" OnClick="btnEnglish_Click" Style="background-color: rgba(123, 72, 209, 0.8); font-size: larger; width: 40%; margin-left: 30%" UseSubmitBehavior="false" ID="btnMarathi" value="hi" class="btn btn button arrow" Text="मराठी"></asp:Button>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+				<%--Popup Section--%>
+
+
+				<div id="popupambulance" class="overlay">
+					<div class="popup">
+						<h2>Ambulance Help</h2>
+						<div class="content">
+							<iframe id="frame1" style="width: 1200px; height: 440px" src="https://www.pcmcindia.gov.in/quicklinks.php?Link=1" style="border: none; margin-left: 20px; box-shadow: 0px 0px 20px 2px #1999aa;"></iframe>
+						</div>
+						<div style="margin-left: 47%">
+							<a href="#" class="btn btn" style="background-color: rgb(255, 0, 0); width: 20%; font-size: larger" onclick="doLogout();" role="button">Close</a>
+						</div>
+					</div>
+				</div>
+
+				<div id="popupbloodbank" class="overlay">
+					<div class="popup">
+						<h2>Blood Bank Help</h2>
+						<div class="content">
+							<iframe id="frame2" style="width: 1200px; height: 440px" src="https://www.pcmcindia.gov.in/quicklinks.php?Link=2" style="border: none; margin-left: 20px; box-shadow: 0px 0px 20px 2px #1999aa;"></iframe>
+						</div>
+						<div style="margin-left: 47%">
+							<a href="#" class="btn btn" style="background-color: rgb(255, 0, 0); width: 20%; font-size: larger" onclick="doLogout();" role="button">Close</a>
+						</div>
+					</div>
+				</div>
+
+
+				<div id="popupfire" class="overlay">
+					<div class="popup">
+						<h2>Fire Help</h2>
+						<div class="content">
+							<iframe id="frame3" style="width: 1200px; height: 440px" src="https://www.pcmcindia.gov.in/quicklinks.php?Link=6" style="border: none; margin-left: 20px; box-shadow: 0px 0px 20px 2px #1999aa;"></iframe>
+						</div>
+						<div style="margin-left: 47%">
+							<a href="#" class="btn btn" style="background-color: rgb(255, 0, 0); width: 20%; font-size: larger" onclick="doLogout();" role="button">Close</a>
+						</div>
+					</div>
+				</div>
+
+				<div id="popuphospital" class="overlay">
+					<div class="popup">
+						<h2>Hospital Help</h2>
+						<div class="content">
+							<iframe id="frame4" style="width: 1200px; height: 440px" src="https://www.pcmcindia.gov.in/quicklinks.php?Link=7" style="border: none; margin-left: 20px; box-shadow: 0px 0px 20px 2px #1999aa;"></iframe>
+						</div>
+						<div style="margin-left: 47%">
+							<a href="#" class="btn btn" style="background-color: rgb(255, 0, 0); width: 20%; font-size: larger" onclick="doLogout();" role="button">Close</a>
+						</div>
+					</div>
+				</div>
+
+				<div id="popuppolice" class="overlay">
+					<div class="popup">
+						<h2>Police Help</h2>
+						<div class="content">
+							<iframe id="frame5" style="width: 1200px; height: 440px" src="https://www.pcmcindia.gov.in/quicklinks.php?Link=7" style="border: none; margin-left: 20px; box-shadow: 0px 0px 20px 2px #1999aa;"></iframe>
+						</div>
+						<div style="margin-left: 47%">
+							<a href="#" class="btn btn" style="background-color: rgb(255, 0, 0); width: 20%; font-size: larger" onclick="doLogout();" role="button">Close</a>
+						</div>
+					</div>
+				</div>
+
+
+				<div id="popupchemist" class="overlay">
+					<div class="popup">
+						<h2>Chemist Help</h2>
+						<div class="content">
+							<iframe id="frame6" style="width: 1200px; height: 440px" src="https://www.pcmcindia.gov.in/quicklinks.php?Link=3" style="border: none; margin-left: 20px; box-shadow: 0px 0px 20px 2px #1999aa;"></iframe>
+						</div>
+						<div style="margin-left: 47%">
+							<a href="#" class="btn btn" style="background-color: rgb(255, 0, 0); width: 20%; font-size: larger" onclick="doLogout();" role="button">Close</a>
+						</div>
+					</div>
+				</div>
+
+				<div id="popupsarathi" class="overlay">
+   	     <div class="popup">
+		<h2>Sarthi Helpline</h2>
+		<div class="content">
+		 <iframe id="frame8" style="width:1200px;height:440px"  src="https://www.pcmcindia.gov.in/cfc_info.php"  style="border: none; margin-left:20px;  box-shadow: 0px 0px 20px 2px #1999aa;"></iframe>  
+		</div>
+         <div style="margin-left: 47%">
+
+               <a href="#" class="btn btn" style="background-color:rgb(255, 0, 0);width: 20%; font-size:larger" onclick="doLogout();" role="button">Close</a>
+             
+            </div>
+	</div>
+</div>
+
+	 
+
+				<%--	PopUp End--%>
+			</div>
+		</section>
+		<div class="QuickLink">
+			<div class="fixed-bottom">
+				<div class="row fixed-row-bottom" id="QuickLink">
+					<%--Footer--%>
+					<div class="col-md-12"></div>
+					<div class="col-md-1"></div>
+
+					<div class="col-md-2">
+						<h5><span style="color: darkgreen">QUICK LINKS</span></h5>
+					</div>
+					<div class="col-md-8" style="margin-left: 0px;">
+						<a href="#popupambulance" class="carouselPointers" onclick="HideQuicklink();"><span class="imgSpan" style="position: relative; background-color: rgb(242, 160, 160)">
+							<img src="images/Ambulance.png" style="margin-bottom: 25px" /></span><span class="carouselPointersText" style="border: 3px solid rgb(242, 160, 160);"><%=Resources.Resource.Ambulance %></span></a>
+						<a href="#popupbloodbank" class="carouselPointers" onclick="HideQuicklink();"><span class="imgSpan" style="position: relative; background-color: rgb(242, 160, 160)">
+							<img src="images/bloodbank.png" /></span><span class="carouselPointersText" style="border: 3px solid rgb(242, 160, 160);"><%=Resources.Resource.Blood %> <%=Resources.Resource.Bank %></span></a>
+						<a href="#popupfire" class="carouselPointers" onclick="HideQuicklink();"><span class="imgSpan" style="position: relative; background-color: rgb(242, 160, 160)">
+							<img src="images/fire.png" style="height: 30px" /></span><span class="carouselPointersText" style="border: 3px solid rgb(242, 160, 160);"><%=Resources.Resource.Fire %> <%=Resources.Resource.Brigade %></span></a><br />
+						<a href="#popuphospital" class="carouselPointers" onclick="HideQuicklink();"><span class="imgSpan" style="position: relative; background-color: rgb(242, 160, 160)">
+							<img src="images/hospital.png" style="height: 30px" /></span><span class="carouselPointersText" style="border: 3px solid rgb(242, 160, 160);"><%=Resources.Resource.Hospitals %></span></a>
+						<a href="#popuppolice" class="carouselPointers" onclick="HideQuicklink();"><span class="imgSpan" style="position: relative; background-color: rgb(242, 160, 160)">
+							<img src="images/police.png" style="height: 30px" /></span><span class="carouselPointersText" style="border: 3px solid rgb(242, 160, 160);"><%=Resources.Resource.Police %></span></a>
+						<a href="#popupchemist" class="carouselPointers" onclick="HideQuicklink();"><span class="imgSpan" style="position: relative; background-color: rgb(242, 160, 160)">
+							<img src="images/chemist.png" style="height: 30px" /></span><span class="carouselPointersText" style="border: 3px solid rgb(242, 160, 160);"><%=Resources.Resource.Chemist %></span></a>
+
+					</div>
+					<div class="col-md-1">
+						<a href="#popupsarathi" onclick="HideQuicklink();">
+							<div class="icon-launch"></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<style>
+			div.icon-launch {
+				  padding-top:15px;
+                padding-left:7px;
+        		bottom: 15px;
+        		right: 30px;
+        		position: fixed;
+                color:orangered;
+        		height: 60px;
+        		width: 60px;
+        		border-radius: 50%;
+        		background-image: url(../PCMC/images/Sarathi.png);
+        		background-size: cover;
+        		border-style: solid;
+        		border-color: #b30059;
+        		cursor: pointer;
+			}
+		</style>
+
+
+		<style>
+			.carouselPointers {
+				display: inline-block;
+				border-radius: 8px;
+				text-align: left;
+				color: #000;
+				-webkit-transition: all 0.5s;
+			}
+
+				.carouselPointers span.imgSpan {
+					background: #cb3906;
+					padding: 10px 10px;
+					display: inline-block;
+					width: 70px;
+					height: 50px;
+					vertical-align: middle;
+					border-radius: 8px 0px 0px 8px;
+					float: left;
+					text-align: center;
+					position: relative;
+					/*transition: all 0.5s;*/
+					-webkit-transition: all 0.5s;
+				}
+
+				.carouselPointers span.carouselPointersText {
+					display: inline-block;
+					background: rgba(255, 255, 255, 0.81);
+					border-radius: 0px 8px 8px 0px;
+					padding: 10px;
+					text-align: left;
+					border: 3px solid #cb3906;
+					font-size: 14px;
+					text-transform: uppercase;
+					font-weight: 500;
+					letter-spacing: 1px;
+					float: left;
+					width: 135px;
+					height: 50px;
+					/*transition: all 0.5s;*/
+					-webkit-transition: all 0.5s;
+				}
+		</style>
+
+
+		<script type="text/javascript">
+			function doLogout() {
+				var backlen = history.length;
+				history.go(-backlen);
+				window.location.replace("MainHome.aspx");
+			}
+		</script>
+
+
+
+
+
+		<script type="text/javascript">
+			function ShowQuicklink() {
+
+				var x = document.getElementById("QuickLink");
+				if (x.style.display === "none") {
+					x.style.display = "block";
+				} else {
+					x.style.display = "none";
+				}
+				var x = document.getElementById("Back");
+				if (x.style.display === "none") {
+					x.style.display = "block";
+				} else {
+					x.style.display = "none";
+				}
+
+			}
+			function HideQuicklink() {
+
+				var x = document.getElementById("QuickLink");
+				if (x.style.display === "none") {
+					x.style.display = "block";
+				} else {
+					x.style.display = "none";
+				}
+
+
+			}
+		</script>
+
+
+		<script>
+			!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+		</script>
+
+
+
+		<style>
+			h1 {
+				text-align: center;
+				font-family: Tahoma, Arial, sans-serif;
+				color: #06D85F;
+				margin: 80px 0;
+			}
+
+			.box {
+				width: 40%;
+				margin: 0 auto;
+				background: #eb0029;
+				padding: 25px;
+				border: 1px solid #fff;
+				border-radius: 5px/50px;
+				background-clip: padding-box;
+				text-align: center;
+			}
+
+			.button {
+				font-size: 1.4em;
+				padding: 10px;
+				color: #fff;
+				border: 2px solid #eb0029;
+				border-radius: 20px/50px;
+				text-decoration: none;
+				cursor: pointer;
+				transition: all 0.3s ease-out;
+			}
+
+				.button:hover {
+					background: #06D85F;
+				}
+
+			.overlay {
+				position: fixed;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background: rgba(0, 0, 0, 0.7);
+				transition: opacity 500ms;
+				visibility: hidden;
+				opacity: 0;
+			}
+
+				.overlay:target {
+					visibility: visible;
+					opacity: 1;
+				}
+
+			.popup {
+				margin: 70px auto;
+				padding: 20px;
+				background: #fff;
+				border-radius: 5px;
+				width: 85%;
+				position: relative;
+				transition: all 5s ease-in-out;
+			}
+
+				.popup h2 {
+					margin-top: 0;
+					color: #333;
+					font-family: Tahoma, Arial, sans-serif;
+				}
+
+				.popup .close {
+					position: absolute;
+					top: 20px;
+					right: 30px;
+					transition: all 200ms;
+					font-size: 30px;
+					font-weight: bold;
+					text-decoration: none;
+					color: #333;
+				}
+
+					.popup .close:hover {
+						color: #06D85F;
+					}
+
+				.popup .content {
+					max-height: 30%;
+					overflow: auto;
+				}
+
+			@media screen and (max-width: 700px) {
+				.box {
+					width: 70%;
+				}
+
+				.popup {
+					width: 70%;
+				}
+			}
+		</style>
+		<link href="assets/css/modal.css" rel="stylesheet" />
+
+		<script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+		<script src="assets/js/vendor/bootstrap.min.js"></script>
+		<link href="css/bootstrap.min.css" rel="stylesheet" />
+		<%--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>--%>
+
+		<script src="assets/js/jquery.magnific-popup.js"></script>
+		<script src="assets/js/jquery.easing.1.3.js"></script>
+		<script src="assets/js/swiper.min.js"></script>
+		<script src="assets/js/jquery.collapse.js"></script>
+		<script src="assets/js/bootsnav.js"></script>
+
+		<script src="assets/js/plugins.js"></script>
+		<script src="assets/js/main.js"></script>
+	</form>
+</body>
+</html>

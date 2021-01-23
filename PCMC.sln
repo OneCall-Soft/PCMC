@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1259
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "PCMC", ".", "{2D139C21-5B31-48EC-8F06-C0274DD261F6}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_57227"
+		Debug.AspNetCompiler.PhysicalPath = "..\PCMC\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57227\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_57227"
+		Release.AspNetCompiler.PhysicalPath = "..\PCMC\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_57227\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "57227"
+		SlnRelativePath = "..\PCMC\"
+		StartServerOnDebug = "true"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D139C21-5B31-48EC-8F06-C0274DD261F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D139C21-5B31-48EC-8F06-C0274DD261F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {408B117D-F241-4BC1-AF6C-A908A681127F}
+	EndGlobalSection
+EndGlobal

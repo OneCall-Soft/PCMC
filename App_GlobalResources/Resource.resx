@@ -1,0 +1,1357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="and" xml:space="preserve">
+    <value>And</value>
+  </data>
+  <data name="Application" xml:space="preserve">
+    <value>Application</value>
+  </data>
+  <data name="Auditorium" xml:space="preserve">
+    <value>Auditorium</value>
+  </data>
+  <data name="Booking" xml:space="preserve">
+    <value>Booking</value>
+  </data>
+  <data name="Bus" xml:space="preserve">
+    <value>Bus Ticket</value>
+  </data>
+  <data name="CFC" xml:space="preserve">
+    <value>CFC</value>
+  </data>
+  <data name="Digital" xml:space="preserve">
+    <value>Digital</value>
+  </data>
+  <data name="EAC" xml:space="preserve">
+    <value>EAC</value>
+  </data>
+  <data name="Emergency" xml:space="preserve">
+    <value>Emergency</value>
+  </data>
+  <data name="Feedback" xml:space="preserve">
+    <value>Feedback</value>
+  </data>
+  <data name="Griveance" xml:space="preserve">
+    <value>Grievances</value>
+  </data>
+  <data name="Helpline" xml:space="preserve">
+    <value>Helpline</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="locations" xml:space="preserve">
+    <value>Locations</value>
+  </data>
+  <data name="Management" xml:space="preserve">
+    <value>Management</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>Mobile</value>
+  </data>
+  <data name="Movie" xml:space="preserve">
+    <value>Movie</value>
+  </data>
+  <data name="of" xml:space="preserve">
+    <value>of</value>
+  </data>
+  <data name="other" xml:space="preserve">
+    <value>other</value>
+  </data>
+  <data name="Payments" xml:space="preserve">
+    <value>Payments</value>
+  </data>
+  <data name="Purchase" xml:space="preserve">
+    <value>Purchase</value>
+  </data>
+  <data name="Railway" xml:space="preserve">
+    <value>Railway Ticket</value>
+  </data>
+  <data name="Recharge" xml:space="preserve">
+    <value>Recharge</value>
+  </data>
+  <data name="RTS" xml:space="preserve">
+    <value>RTS</value>
+  </data>
+  <data name="Sarthi" xml:space="preserve">
+    <value>Sarthi</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="Tickets" xml:space="preserve">
+    <value>Tickets</value>
+  </data>
+  <data name="Utilities" xml:space="preserve">
+    <value>Utilities</value>
+  </data>
+  <data name="Various" xml:space="preserve">
+    <value>Various</value>
+  </data>
+  <data name="Aaple" xml:space="preserve">
+    <value>Aple Sarkar</value>
+  </data>
+  <data name="Abhi" xml:space="preserve">
+    <value>Abhi</value>
+  </data>
+  <data name="across" xml:space="preserve">
+    <value>across</value>
+  </data>
+  <data name="Advertesment" xml:space="preserve">
+    <value>Advertesment</value>
+  </data>
+  <data name="alert" xml:space="preserve">
+    <value>alert</value>
+  </data>
+  <data name="assistance" xml:space="preserve">
+    <value>Assistance</value>
+  </data>
+  <data name="attraction" xml:space="preserve">
+    <value>Attraction</value>
+  </data>
+  <data name="Audio" xml:space="preserve">
+    <value>Audio</value>
+  </data>
+  <data name="AV" xml:space="preserve">
+    <value>AV</value>
+  </data>
+  <data name="Billing" xml:space="preserve">
+    <value>Billing</value>
+  </data>
+  <data name="Bills" xml:space="preserve">
+    <value>Bills</value>
+  </data>
+  <data name="Birth" xml:space="preserve">
+    <value>Birth</value>
+  </data>
+  <data name="Body" xml:space="preserve">
+    <value>Body</value>
+  </data>
+  <data name="Card" xml:space="preserve">
+    <value>Card</value>
+  </data>
+  <data name="center" xml:space="preserve">
+    <value>center</value>
+  </data>
+  <data name="Centers" xml:space="preserve">
+    <value>Centers</value>
+  </data>
+  <data name="Certificate" xml:space="preserve">
+    <value>Certificate</value>
+  </data>
+  <data name="Chinchwad" xml:space="preserve">
+    <value>Chinchwad</value>
+  </data>
+  <data name="Citizen" xml:space="preserve">
+    <value>Citizen</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="Common" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="connect" xml:space="preserve">
+    <value>Connect</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="Dakhla" xml:space="preserve">
+    <value>Dakhla</value>
+  </data>
+  <data name="details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Didital" xml:space="preserve">
+    <value>Didital</value>
+  </data>
+  <data name="DropBox" xml:space="preserve">
+    <value>DropBox</value>
+  </data>
+  <data name="ECB" xml:space="preserve">
+    <value>ECB</value>
+  </data>
+  <data name="environmental" xml:space="preserve">
+    <value>Environmental</value>
+  </data>
+  <data name="etc" xml:space="preserve">
+    <value>etc</value>
+  </data>
+  <data name="Facilitation" xml:space="preserve">
+    <value>Facilitation</value>
+  </data>
+  <data name="Facilities" xml:space="preserve">
+    <value>Facilities</value>
+  </data>
+  <data name="Facluty" xml:space="preserve">
+    <value>Facluty</value>
+  </data>
+  <data name="Fi" xml:space="preserve">
+    <value>Fi</value>
+  </data>
+  <data name="For" xml:space="preserve">
+    <value>For</value>
+  </data>
+  <data name="Governance" xml:space="preserve">
+    <value>Governance</value>
+  </data>
+  <data name="government" xml:space="preserve">
+    <value>Government</value>
+  </data>
+  <data name="help" xml:space="preserve">
+    <value>help</value>
+  </data>
+  <data name="hi" xml:space="preserve">
+    <value>hi</value>
+  </data>
+  <data name="hotels" xml:space="preserve">
+    <value>Hotels</value>
+  </data>
+  <data name="ICCC" xml:space="preserve">
+    <value>ICCC</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="Integration" xml:space="preserve">
+    <value>Integration</value>
+  </data>
+  <data name="into" xml:space="preserve">
+    <value>into</value>
+  </data>
+  <data name="Kiosk" xml:space="preserve">
+    <value>Kiosk</value>
+  </data>
+  <data name="Local" xml:space="preserve">
+    <value>Local</value>
+  </data>
+  <data name="location" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="Make" xml:space="preserve">
+    <value>Make</value>
+  </data>
+  <data name="Managment" xml:space="preserve">
+    <value>Managment</value>
+  </data>
+  <data name="me" xml:space="preserve">
+    <value>me</value>
+  </data>
+  <data name="MI" xml:space="preserve">
+    <value>MI</value>
+  </data>
+  <data name="My" xml:space="preserve">
+    <value>My</value>
+  </data>
+  <data name="near" xml:space="preserve">
+    <value>near</value>
+  </data>
+  <data name="offices" xml:space="preserve">
+    <value>offices</value>
+  </data>
+  <data name="Part" xml:space="preserve">
+    <value>Part</value>
+  </data>
+  <data name="Payment" xml:space="preserve">
+    <value>Payment</value>
+  </data>
+  <data name="PCMC" xml:space="preserve">
+    <value>PCMC </value>
+  </data>
+  <data name="Pimpri" xml:space="preserve">
+    <value>Pimpri</value>
+  </data>
+  <data name="Places" xml:space="preserve">
+    <value>Places</value>
+  </data>
+  <data name="Plan" xml:space="preserve">
+    <value>Plan</value>
+  </data>
+  <data name="PMPML" xml:space="preserve">
+    <value>PMPML MI Card Recharge</value>
+  </data>
+  <data name="Police" xml:space="preserve">
+    <value>Police</value>
+  </data>
+  <data name="Property" xml:space="preserve">
+    <value>Property</value>
+  </data>
+  <data name="Public" xml:space="preserve">
+    <value>Public</value>
+  </data>
+  <data name="raise" xml:space="preserve">
+    <value>raise</value>
+  </data>
+  <data name="Red" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="routes" xml:space="preserve">
+    <value>routes</value>
+  </data>
+  <data name="RTI" xml:space="preserve">
+    <value>RTI</value>
+  </data>
+  <data name="Sarathi" xml:space="preserve">
+    <value>Sarathi</value>
+  </data>
+  <data name="Sarkar" xml:space="preserve">
+    <value>Sarkar</value>
+  </data>
+  <data name="sensors" xml:space="preserve">
+    <value>sensors</value>
+  </data>
+  <data name="shops" xml:space="preserve">
+    <value>shops</value>
+  </data>
+  <data name="Slum" xml:space="preserve">
+    <value>Slum</value>
+  </data>
+  <data name="Smartcity" xml:space="preserve">
+    <value>Smartcity</value>
+  </data>
+  <data name="soliticing" xml:space="preserve">
+    <value>soliticing</value>
+  </data>
+  <data name="space" xml:space="preserve">
+    <value>space</value>
+  </data>
+  <data name="Spots" xml:space="preserve">
+    <value>Spots</value>
+  </data>
+  <data name="Stations" xml:space="preserve">
+    <value>Stations</value>
+  </data>
+  <data name="Tax" xml:space="preserve">
+    <value>Tax</value>
+  </data>
+  <data name="Telephone" xml:space="preserve">
+    <value>Telephone</value>
+  </data>
+  <data name="through" xml:space="preserve">
+    <value>through</value>
+  </data>
+  <data name="toilet" xml:space="preserve">
+    <value>Toilet</value>
+  </data>
+  <data name="tourist" xml:space="preserve">
+    <value>Tourist</value>
+  </data>
+  <data name="Tourists" xml:space="preserve">
+    <value>Tourists</value>
+  </data>
+  <data name="Trip" xml:space="preserve">
+    <value>Trip</value>
+  </data>
+  <data name="Utility" xml:space="preserve">
+    <value>Utility</value>
+  </data>
+  <data name="Video" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="Ward" xml:space="preserve">
+    <value>Ward</value>
+  </data>
+  <data name="Water" xml:space="preserve">
+    <value>Water</value>
+  </data>
+  <data name="Wi" xml:space="preserve">
+    <value>Wi</value>
+  </data>
+  <data name="with" xml:space="preserve">
+    <value>with</value>
+  </data>
+  <data name="Zone" xml:space="preserve">
+    <value>Zone</value>
+  </data>
+  <data name="Apllication" xml:space="preserve">
+    <value>Apllication</value>
+  </data>
+  <data name="am" xml:space="preserve">
+    <value>am</value>
+  </data>
+  <data name="are" xml:space="preserve">
+    <value>are</value>
+  </data>
+  <data name="Ticket" xml:space="preserve">
+    <value>Ticket</value>
+  </data>
+  <data name="AbhiBus" xml:space="preserve">
+    <value>AbhiBus</value>
+  </data>
+  <data name="ClearTrip" xml:space="preserve">
+    <value>ClearTrip</value>
+  </data>
+  <data name="MakeMyTrip" xml:space="preserve">
+    <value>MakeMyTrip</value>
+  </data>
+  <data name="RedBus" xml:space="preserve">
+    <value>RedBus</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>to</value>
+  </data>
+  <data name="Ambulance" xml:space="preserve">
+    <value>Ambulance</value>
+  </data>
+  <data name="Bank" xml:space="preserve">
+    <value>Bank</value>
+  </data>
+  <data name="Blood" xml:space="preserve">
+    <value>Blood</value>
+  </data>
+  <data name="Brigade" xml:space="preserve">
+    <value>Brigade</value>
+  </data>
+  <data name="Chemist" xml:space="preserve">
+    <value>Chemist</value>
+  </data>
+  <data name="Fire" xml:space="preserve">
+    <value>Fire</value>
+  </data>
+  <data name="Hospitals" xml:space="preserve">
+    <value>Hospitals</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>8888 00 6666</value>
+  </data>
+  <data name="Aplesarkar" xml:space="preserve">
+    <value>Your government</value>
+  </data>
+  <data name="localbodytax" xml:space="preserve">
+    <value>Local Body Tax</value>
+  </data>
+  <data name="otherservice" xml:space="preserve">
+    <value>OTHER SERVICES</value>
+  </data>
+  <data name="propertytax" xml:space="preserve">
+    <value>Property Tax</value>
+  </data>
+  <data name="slumbilling" xml:space="preserve">
+    <value>SLUM BILLING</value>
+  </data>
+  <data name="watertax" xml:space="preserve">
+    <value>Water Tax</value>
+  </data>
+  <data name="ss" xml:space="preserve">
+    <value />
+  </data>
+  <data name="quicklinks" xml:space="preserve">
+    <value>QUICK LINKS</value>
+  </data>
+  <data name="entertainment" xml:space="preserve">
+    <value>Entertainment</value>
+  </data>
+  <data name="GrievanceFeedback" xml:space="preserve">
+    <value>Grievances Feedback</value>
+  </data>
+  <data name="InformationServices" xml:space="preserve">
+    <value>Information Services</value>
+  </data>
+  <data name="PaymentServices" xml:space="preserve">
+    <value>Payment Services</value>
+  </data>
+  <data name="RTSServices" xml:space="preserve">
+    <value>RTS Services</value>
+  </data>
+  <data name="transport" xml:space="preserve">
+    <value>Public Transport</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="telephoneRecharge" xml:space="preserve">
+    <value>Telephone/Mobile Recharge</value>
+  </data>
+  <data name="Smartcityline" xml:space="preserve">
+    <value>PIMPRI CHINCHWAD SMART CITY LIMITED</value>
+  </data>
+  <data name="birthcertificate" xml:space="preserve">
+    <value>Birth Certificate</value>
+  </data>
+  <data name="btnpayment" xml:space="preserve">
+    <value>MAKE PAYMENT</value>
+  </data>
+  <data name="btnshow" xml:space="preserve">
+    <value> SHOW</value>
+  </data>
+  <data name="lblAddress" xml:space="preserve">
+    <value>Address :</value>
+  </data>
+  <data name="lblbalance" xml:space="preserve">
+    <value>Balance :</value>
+  </data>
+  <data name="lblconsumerid" xml:space="preserve">
+    <value>Consumer ID :</value>
+  </data>
+  <data name="lbledit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="lblGatNo" xml:space="preserve">
+    <value>Gat No :</value>
+  </data>
+  <data name="lblMiyakatNo" xml:space="preserve">
+    <value>Property  No :</value>
+  </data>
+  <data name="lblName" xml:space="preserve">
+    <value>Name :</value>
+  </data>
+  <data name="lblVadhiv" xml:space="preserve">
+    <value>Extra:</value>
+  </data>
+  <data name="lblward" xml:space="preserve">
+    <value>Gat :</value>
+  </data>
+  <data name="lblZoneName" xml:space="preserve">
+    <value>Zone Name :</value>
+  </data>
+  <data name="lblZoneNumber" xml:space="preserve">
+    <value>Zone No :</value>
+  </data>
+  <data name="partplanZoneDakhla" xml:space="preserve">
+    <value>Part Plan / Zone Dakhla</value>
+  </data>
+  <data name="RTIServices" xml:space="preserve">
+    <value>RTI Services</value>
+  </data>
+  <data name="bikerental" xml:space="preserve">
+    <value>Bike Rental</value>
+  </data>
+  <data name="CitizensFacilitationCenters" xml:space="preserve">
+    <value>Citizen’s Facilitation</value>
+  </data>
+  <data name="D2HRecharge" xml:space="preserve">
+    <value>D2H Recharge</value>
+  </data>
+  <data name="DropboxService" xml:space="preserve">
+    <value>DropBox Service</value>
+  </data>
+  <data name="emergencycontacts" xml:space="preserve">
+    <value>Emergency Contacts</value>
+  </data>
+  <data name="GriveanceManagment" xml:space="preserve">
+    <value>Grievances Management</value>
+  </data>
+  <data name="infofortourist" xml:space="preserve">
+    <value>Info For Tourists</value>
+  </data>
+  <data name="Movies" xml:space="preserve">
+    <value>Movies</value>
+  </data>
+  <data name="publictoiletfeedback" xml:space="preserve">
+    <value>Public Toilet Feedback</value>
+  </data>
+  <data name="smartcitynearme" xml:space="preserve">
+    <value>Smart City Services Near Me</value>
+  </data>
+  <data name="Sports" xml:space="preserve">
+    <value>Sports</value>
+  </data>
+  <data name="Aaditya" xml:space="preserve">
+    <value>Aaditya Birla Hospital</value>
+  </data>
+  <data name="Answer" xml:space="preserve">
+    <value>Answer</value>
+  </data>
+  <data name="BuildingPermission" xml:space="preserve">
+    <value>Building Permission</value>
+  </data>
+  <data name="FakirBhai" xml:space="preserve">
+    <value>Fakirbhai Medical Foundation</value>
+  </data>
+  <data name="PTA" xml:space="preserve">
+    <value>Property Tax Assessment</value>
+  </data>
+  <data name="PTA1" xml:space="preserve">
+    <value>Person \/ Institutes who own \/ possess land \/ building within limits of PCMC have to pay property tax. Property Tax is applicable to all properties and open lands within Municipal Corporation limits.</value>
+  </data>
+  <data name="PTBP" xml:space="preserve">
+    <value>Property Tax Bill And Payment</value>
+  </data>
+  <data name="PTH" xml:space="preserve">
+    <value>Property-Tax Bill And Payment</value>
+  </data>
+  <data name="PTQ1" xml:space="preserve">
+    <value>Who has to pay Property Tax? Which properties are accountable for Property Tax assessment?</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="RajeshBhai" xml:space="preserve">
+    <value>Late Rajesh Behl Pratishthan</value>
+  </data>
+  <data name="Sewerage" xml:space="preserve">
+    <value>Sewerage</value>
+  </data>
+  <data name="TownPlan" xml:space="preserve">
+    <value>Town Plan</value>
+  </data>
+  <data name="UnauthorisedConstruction" xml:space="preserve">
+    <value>Unauthorised Construction</value>
+  </data>
+  <data name="WaterSupply" xml:space="preserve">
+    <value>Water Supply</value>
+  </data>
+  <data name="busbooking" xml:space="preserve">
+    <value>Bus Booking</value>
+  </data>
+  <data name="publictransport" xml:space="preserve">
+    <value>Public Transport</value>
+  </data>
+  <data name="mobilerecharge" xml:space="preserve">
+    <value>Mobile Recharge</value>
+  </data>
+  <data name="movieticket" xml:space="preserve">
+    <value>Movie Ticket</value>
+  </data>
+  <data name="RTSOnline" xml:space="preserve">
+    <value>RTS Online</value>
+  </data>
+  <data name="electricitybill" xml:space="preserve">
+    <value>Electricity Bill</value>
+  </data>
+  <data name="leapbike" xml:space="preserve">
+    <value>Leap Bike</value>
+  </data>
+  <data name="yulu" xml:space="preserve">
+    <value>Yulu Bike</value>
+  </data>
+  <data name="MakePayment" xml:space="preserve">
+    <value>Make Payment</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="paytm" xml:space="preserve">
+    <value>Paytm</value>
+  </data>
+  <data name="ESeverices" xml:space="preserve">
+    <value>ePCMC Services</value>
+  </data>
+  <data name="DeathCertificate" xml:space="preserve">
+    <value>Death Certificate</value>
+  </data>
+  <data name="BookMyShow" xml:space="preserve">
+    <value>Book My Show</value>
+  </data>
+  <data name="Grabon" xml:space="preserve">
+    <value>Grabon</value>
+  </data>
+  <data name="Techibhai" xml:space="preserve">
+    <value>Techi Bhai</value>
+    <comment>B</comment>
+  </data>
+  <data name="EasyMobile" xml:space="preserve">
+    <value>Easy Mobile</value>
+  </data>
+  <data name="Freecharge" xml:space="preserve">
+    <value>Freecharge</value>
+  </data>
+  <data name="Mobikwik" xml:space="preserve">
+    <value>Mobikwik</value>
+  </data>
+  <data name="UtilityServices" xml:space="preserve">
+    <value>Utility Services</value>
+  </data>
+  <data name="ABD" xml:space="preserve">
+    <value>Aditya Birla Hospital</value>
+  </data>
+  <data name="ABMH" xml:space="preserve">
+    <value>Aditya Birla Memorial Hospital</value>
+  </data>
+  <data name="ACPP" xml:space="preserve">
+    <value>A.C.P. Pimpri</value>
+  </data>
+  <data name="AH" xml:space="preserve">
+    <value>Akurdi Hospital</value>
+  </data>
+  <data name="AHH" xml:space="preserve">
+    <value>Aditya Homeopethi Hospital</value>
+  </data>
+  <data name="AKBB" xml:space="preserve">
+    <value>Anand Krushiji Blood Bank</value>
+  </data>
+  <data name="AKJHC" xml:space="preserve">
+    <value>Ashakiran Jublee Hope Center</value>
+  </data>
+  <data name="APS" xml:space="preserve">
+    <value>Akurdi Police Station</value>
+  </data>
+  <data name="BH" xml:space="preserve">
+    <value>Bhosri Hospital</value>
+  </data>
+  <data name="BillCloudPayment" xml:space="preserve">
+    <value>Payment By BillCloud</value>
+  </data>
+  <data name="BPS" xml:space="preserve">
+    <value>Bhosari Police Station</value>
+  </data>
+  <data name="BRH" xml:space="preserve">
+    <value>Burute Hospital</value>
+  </data>
+  <data name="CardPayment" xml:space="preserve">
+    <value>Payment By Card Swipe</value>
+  </data>
+  <data name="CGPC" xml:space="preserve">
+    <value>Chinchward Gaon Police Chouki</value>
+  </data>
+  <data name="DCPP" xml:space="preserve">
+    <value>D.C.P. Pimpri</value>
+  </data>
+  <data name="DH" xml:space="preserve">
+    <value>Denanath Hospital</value>
+  </data>
+  <data name="DPC" xml:space="preserve">
+    <value>Dapodi Police Chouki</value>
+  </data>
+  <data name="DVH" xml:space="preserve">
+    <value>Devdhar Hospital</value>
+  </data>
+  <data name="FBMF" xml:space="preserve">
+    <value>Fakir Bhai Medical Foundation</value>
+  </data>
+  <data name="GAVCFS" xml:space="preserve">
+    <value>Gen.Arunkumar Vaidya Central Fire Station</value>
+  </data>
+  <data name="HJPS" xml:space="preserve">
+    <value>Hinjewadi Police Station</value>
+  </data>
+  <data name="IB" xml:space="preserve">
+    <value>Inlaks Budhrani</value>
+  </data>
+  <data name="Irc" xml:space="preserve">
+    <value>Indian Red Cross</value>
+  </data>
+  <data name="ISIBB" xml:space="preserve">
+    <value>I.S.I. Blood Bank</value>
+  </data>
+  <data name="JH" xml:space="preserve">
+    <value>Joshi Hospital</value>
+  </data>
+  <data name="JK" xml:space="preserve">
+    <value>Jankalyan</value>
+  </data>
+  <data name="Jnh" xml:space="preserve">
+    <value>Jahangir Nursing Home</value>
+  </data>
+  <data name="Kanchan" xml:space="preserve">
+    <value>Kanchan</value>
+  </data>
+  <data name="LHDS" xml:space="preserve">
+    <value>Lokmanya Hospital Drug Store</value>
+  </data>
+  <data name="Nh" xml:space="preserve">
+    <value>Niramay Hospital</value>
+  </data>
+  <data name="PH" xml:space="preserve">
+    <value>PotBaghe Hospital</value>
+  </data>
+  <data name="RBP" xml:space="preserve">
+    <value>Late Rajesh Behl Pratisthan</value>
+  </data>
+  <data name="RCP" xml:space="preserve">
+    <value>Rotary Club Pune</value>
+  </data>
+  <data name="RJP" xml:space="preserve">
+    <value>Rajmata Jijau Pratisthan</value>
+  </data>
+  <data name="RKM" xml:space="preserve">
+    <value>R.K. Medico</value>
+  </data>
+  <data name="RMSSB" xml:space="preserve">
+    <value>Rajmata Jijau Sub Fire station Bhosari</value>
+  </data>
+  <data name="SFSP" xml:space="preserve">
+    <value>Sub Fire Station Pradikaran</value>
+  </data>
+  <data name="SFSR" xml:space="preserve">
+    <value>Sub Fire Station Rahatuni</value>
+  </data>
+  <data name="SFST" xml:space="preserve">
+    <value>Sub Fire Station Talwade</value>
+  </data>
+  <data name="Shivsena" xml:space="preserve">
+    <value>Shivsena</value>
+  </data>
+  <data name="ABD1" xml:space="preserve">
+    <value>Address	 	Aditya Birla Hospital Marg, Chinchwad, Pune 411033
+Chinchwad-  Maharashtra  India
+Contact No.	 	30717500, 30717777</value>
+  </data>
+  <data name="ABD2" xml:space="preserve">
+    <value>Address	 	NIGDI PRADHIKARAN PUNE - 411 044
+PIMPRI CHINCHWAD-411044
+Contact No.	 	9822291070
+Emergency Number	 	 
+Mobile No.	 	9822291070</value>
+  </data>
+  <data name="ABD3" xml:space="preserve">
+    <value>Address	 	SANT TUKARAM NAGAR , PIMPRI , PUNE - 411 018
+PIMPRI CHINCHWAD-411018  MAHARASHTRA  INDIA
+Contact No.	 	9822880722
+Emergency Number	 	 
+Mobile No.	 	9822880722</value>
+  </data>
+  <data name="ABD4" xml:space="preserve">
+    <value>Address	 	CHINCHWAD PUNE - 411019
+PIMPRI CHINCHWAD-411019  MAHARASHTRA  INDIA
+Contact No.	 	9822998891
+Emergency Number	 	 
+Mobile No.	 	9822998891</value>
+  </data>
+  <data name="ABD5" xml:space="preserve">
+    <value>Address	 	LANDEWADI , BHOSARI , PUNE - 411 039
+PIMPRI CHINCHWAD -411039 
+Contact No.	 	9850176868
+Emergency Number	 	 
+Mobile No.	 	9850176868</value>
+  </data>
+  <data name="ABD6" xml:space="preserve">
+    <value>Address	 	CHINCHWAD PUNE - 411 019
+PIMPRI CHINCHWAD-411019  MAHARASHTRA  INDIA
+Contact No.	 	9822073760
+Emergency Number	 	 
+Mobile No.	 	9822073760</value>
+  </data>
+  <data name="ABD7" xml:space="preserve">
+    <value>Address	 	MOHANNAGAR , CHINCHWAD , PUNE - 411 019
+PIMPRI CHINCHWAD-411019
+Contact No.	 	9822544199
+Emergency Number	 	 
+Mobile No.	 	9822544199</value>
+  </data>
+  <data name="CH1" xml:space="preserve">
+    <value>Address	 	Pimpri
+Pune-  Maharashtra  India
+Contact No.	 	25672563</value>
+  </data>
+  <data name="CH2" xml:space="preserve">
+    <value>Address	 	Pimpri
+Pune-  Maharashtra  India
+Contact No.	 	26122329</value>
+  </data>
+  <data name="CH3" xml:space="preserve">
+    <value>Address	 	Nigdi
+Nigdi-411044  Maharashtra  India
+Contact No.	 	27654956</value>
+  </data>
+  <data name="CH4" xml:space="preserve">
+    <value>Address	 	Near Chinchwad Post Office, Behind desai Petrol Pump, Mumbai Pune Road, Chinchwad
+Pimpri-411019  Maharashtra  India
+Contact No.	 	 2441860</value>
+  </data>
+  <data name="CH5" xml:space="preserve">
+    <value>Address	 	Pimpri
+Pune-  Maharashtra  India
+Contact No.	 	25582770</value>
+  </data>
+  <data name="CH6" xml:space="preserve">
+    <value>Address	 	Chinchwad Station
+Chinchwad-411033  Maharashtra  India
+Contact No.	 	 
+Emergency Number	 	 
+Mobile No.	 	9822290810</value>
+  </data>
+  <data name="BB1" xml:space="preserve">
+    <value>Address	 	Pune,  Pune-   Maharashtra 
+Address	 	2437627
+Mobile No.</value>
+  </data>
+  <data name="BB2" xml:space="preserve">
+    <value>Address	 	Pune,  -   Maharashtra India
+Address	 	24023007
+Mobile No.</value>
+  </data>
+  <data name="BB3" xml:space="preserve">
+    <value>Address	 	Pune,  Pune-   Maharashtra India
+Address	 	24335244
+Mobile No.</value>
+  </data>
+  <data name="BB4" xml:space="preserve">
+    <value>Address	 	Pune,  Pune-   Maharashtra India
+Address	 	26120950, 26120950
+Mobile No.	 	 
+Fax No.	 	26120950</value>
+  </data>
+  <data name="BB5" xml:space="preserve">
+    <value>Address	 	Pune,  -   Maharashtra India
+Address	 	27610054
+Mobile No</value>
+  </data>
+  <data name="BB6" xml:space="preserve">
+    <value>Address	 	Pune,  Pune-   Maharashtra India
+Address	 	26122551
+Mobile No.</value>
+  </data>
+  <data name="BB7" xml:space="preserve">
+    <value>Address	 	Pune,  -   Maharashtra India
+Address	 	24449527
+Mobile No.</value>
+  </data>
+  <data name="FB1" xml:space="preserve">
+    <value>Address	 	Sant Tukaram Nagar, Pimpri Pune.
+Pimpri-411018  Maharashtra  India
+Contact No.	 	27423333, 27425405,27420212
+Emergency Number	 	101</value>
+  </data>
+  <data name="FB2" xml:space="preserve">
+    <value>Landewadi Bhosari</value>
+  </data>
+  <data name="FB3" xml:space="preserve">
+    <value>Address	 	Fire Station Pradhikaran, Sector No. 24, Pradhikaran, Nigdi Pune
+Pimpri-411044  Maharashtra  India
+Contact No.	 	27652066
+Emergency Number	 	101
+Mobile No.</value>
+  </data>
+  <data name="FB4" xml:space="preserve">
+    <value>Address	 	S.No.1, Aundh Road, Rahatni
+Pune-  Maharashtra  India
+Contact No.	 	20270881
+Emergency Number	 	101</value>
+  </data>
+  <data name="FB5" xml:space="preserve">
+    <value>ddress	 	Software park Chowk, Laxmi nagar
+Talawade  Maharashtra  India
+Contact No.	 	27690101.
+Emergency Number	 	101
+Mobile No.	 	 9552523101</value>
+  </data>
+  <data name="H1" xml:space="preserve">
+    <value>Aditya Birla Hospital Marg, Chinchwad, Pune 411033
+Chinchwad- Maharashtra India
+Ph. No.020-30717777</value>
+  </data>
+  <data name="H2" xml:space="preserve">
+    <value>Pimpri
+27412549
+Mobile No.	N/A</value>
+  </data>
+  <data name="H3" xml:space="preserve">
+    <value>Address	 	Near Akurdi Church, Akurdi
+Contact No.	 	27483695
+Mobile No.	 	N/A</value>
+  </data>
+  <data name="H4" xml:space="preserve">
+    <value>Address	 	S.N.138, East Near Andrews School
+Contact No.	 	56320462
+Mobile No.	 	N/A</value>
+  </data>
+  <data name="H5" xml:space="preserve">
+    <value>Address	 	Near PCMT Bus Depo Bhosari
+Contact No.	 	27120089
+Mobile No.	 	N/A</value>
+  </data>
+  <data name="H6" xml:space="preserve">
+    <value>Address	 	Rupee Bank, Pune-Nasik Road
+Contact No.	 	27122232
+Mobile No.	 	N/A</value>
+  </data>
+  <data name="H7" xml:space="preserve">
+    <value>Address	Near Tapovan Temple
+Contact No.	27410939
+Mobile No.	N/A</value>
+  </data>
+  <data name="P1" xml:space="preserve">
+    <value>Address	 	A.C.P. Office Neharu Nagar, Near C Ward, Pimpri - 18
+Pune-  Maharashtra  India
+Contact No.	 	27123121</value>
+  </data>
+  <data name="P2" xml:space="preserve">
+    <value>Akurdi
+
+Phone:-
+
+Fax:-
+
+email:-</value>
+  </data>
+  <data name="P3" xml:space="preserve">
+    <value>Address	 	Bhosari Chouk, Near Shivaji Statue, Bhosari - 411039
+Pune-  Meharashtra  India
+Contact No.	 	27124728
+Emergency Number	 	100
+Mobile No.</value>
+  </data>
+  <data name="P4" xml:space="preserve">
+    <value>Address	 	Chaphekar Chouk, Chinchwad Gaon, Chinchwad - 411033
+Pune-  Maharashtra  India
+Contact No.	 	27356767
+Emergency Number	 	100</value>
+  </data>
+  <data name="P5" xml:space="preserve">
+    <value>Address	 	Mumbai pune Road, Premier Plaza, Pimpri - 411018
+Pune-  Maharashtra  India
+Contact No.	 	27487777
+Emergency Number	 	100
+Mobile No.</value>
+  </data>
+  <data name="P6" xml:space="preserve">
+    <value>Address	 	Mumbai Pune Road, Near Dapodi Railway Station, Dapodi - 411012
+Pune-  Maharashtra  India
+Contact No.	 	27149538 ext493, 25532041 - 493
+Emergency Number	 	100</value>
+  </data>
+  <data name="P7" xml:space="preserve">
+    <value>Address	 	Hinjwadi wakad - 411057
+Pune-  Maharashtra  India
+Contact No.	 	22932119
+Emergency Number	 	100</value>
+  </data>
+  <data name="Paymentsss" xml:space="preserve">
+    <value>Payments</value>
+  </data>
+  <data name="Police1" xml:space="preserve">
+    <value>Pimpri Police Station</value>
+  </data>
+  <data name="Police10" xml:space="preserve">
+    <value>Wakad Police Station</value>
+  </data>
+  <data name="Police11" xml:space="preserve">
+    <value>Dighi Police Station</value>
+  </data>
+  <data name="Police12" xml:space="preserve">
+    <value>Talegaon MIDC Police Station</value>
+  </data>
+  <data name="Police13" xml:space="preserve">
+    <value>Dehuroad Police Station</value>
+  </data>
+  <data name="Police14" xml:space="preserve">
+    <value>Chakan Police Station</value>
+  </data>
+  <data name="Police15" xml:space="preserve">
+    <value>Chikhali Police Station</value>
+  </data>
+  <data name="Police2" xml:space="preserve">
+    <value>Bhosari Police Station</value>
+  </data>
+  <data name="Police3" xml:space="preserve">
+    <value>Alandi Police Station</value>
+  </data>
+  <data name="Police4" xml:space="preserve">
+    <value>Chinchward Police Station</value>
+  </data>
+  <data name="Police5" xml:space="preserve">
+    <value>Nigadi Police Station</value>
+  </data>
+  <data name="Police6" xml:space="preserve">
+    <value>Talegaon Dabhade Police Station</value>
+  </data>
+  <data name="Police7" xml:space="preserve">
+    <value>MIDC Bhosari Police Station</value>
+  </data>
+  <data name="Police8" xml:space="preserve">
+    <value>Sangari Police Station</value>
+  </data>
+  <data name="Police9" xml:space="preserve">
+    <value>Hinjewadi Police Station</value>
+  </data>
+  <data name="NewGrievance" xml:space="preserve">
+    <value>New Grievance</value>
+  </data>
+  <data name="AadhaarNo" xml:space="preserve">
+    <value>Aadhaar No.</value>
+  </data>
+  <data name="Aniket" xml:space="preserve">
+    <value>Aniket</value>
+  </data>
+  <data name="Area" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="BeneficiarysFirstName" xml:space="preserve">
+    <value>Beneficiary's First Name</value>
+  </data>
+  <data name="Beneficiaryslastname" xml:space="preserve">
+    <value>Beneficiary's last name</value>
+  </data>
+  <data name="BeneficiarysNameofFatherorHusband" xml:space="preserve">
+    <value>Beneficiary's Name of Father / Husband</value>
+  </data>
+  <data name="CFCOrApplicationNo" xml:space="preserve">
+    <value>C.F.C/Application No.</value>
+  </data>
+  <data name="ElectionDivision" xml:space="preserve">
+    <value>Election Division</value>
+  </data>
+  <data name="EligibleOrIneligible" xml:space="preserve">
+    <value>Eligible / Ineligible</value>
+  </data>
+  <data name="MobileNo" xml:space="preserve">
+    <value>Mobile No.</value>
+  </data>
+  <data name="naagarvastivibhag" xml:space="preserve">
+    <value>Nagar Vasti Vibhag</value>
+  </data>
+  <data name="originalplan" xml:space="preserve">
+    <value>Original Plan</value>
+  </data>
+  <data name="Regionaloffice" xml:space="preserve">
+    <value>Regional Office</value>
+  </data>
+  <data name="Subplan" xml:space="preserve">
+    <value>Sub Plan</value>
+  </data>
+  <data name="WardFacilities" xml:space="preserve">
+    <value>Ward Facilities</value>
+  </data>
+  <data name="eligible" xml:space="preserve">
+    <value>Eligible</value>
+  </data>
+  <data name="Ineligible" xml:space="preserve">
+    <value>Ineligible</value>
+  </data>
+  <data name="LICPremiumPayment" xml:space="preserve">
+    <value>LIC Premium Payment</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="PayU" xml:space="preserve">
+    <value>PayU</value>
+  </data>
+  <data name="PPZD" xml:space="preserve">
+    <value>Part Plan/Zone Dakhla</value>
+  </data>
+  <data name="FB6" xml:space="preserve">
+    <value>Chikali Fire Station LL. mobile no.02027494849</value>
+  </data>
+  <data name="FB7" xml:space="preserve">
+    <value>Chikali Fire Station mobile no. 8669694101</value>
+  </data>
+  <data name="CFS1" xml:space="preserve">
+    <value>Chikali Fire Station LL.</value>
+  </data>
+  <data name="CFS2" xml:space="preserve">
+    <value>Chikali Fire Station</value>
+  </data>
+  <data name="goback" xml:space="preserve">
+    <value>BACK</value>
+  </data>
+  <data name="description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="getbilldetailsbyhutnumber" xml:space="preserve">
+    <value>Get Bill Details By Hut Number</value>
+  </data>
+  <data name="Hut" xml:space="preserve">
+    <value>Hut</value>
+  </data>
+  <data name="Hutno" xml:space="preserve">
+    <value>Hut No.</value>
+  </data>
+  <data name="mailid" xml:space="preserve">
+    <value>Email ID</value>
+  </data>
+  <data name="mobilenum" xml:space="preserve">
+    <value>Mobile Number</value>
+  </data>
+  <data name="Paidamount" xml:space="preserve">
+    <value>Paid Amount</value>
+  </data>
+  <data name="Payableamount" xml:space="preserve">
+    <value>Payable Amount</value>
+  </data>
+  <data name="Previousdemand" xml:space="preserve">
+    <value>Previous Demand</value>
+  </data>
+  <data name="subjectlist" xml:space="preserve">
+    <value>Subject List</value>
+  </data>
+  <data name="Usage" xml:space="preserve">
+    <value>Usage</value>
+  </data>
+  <data name="ChildName" xml:space="preserve">
+    <value>Child Name</value>
+  </data>
+  <data name="ConsumerDetails" xml:space="preserve">
+    <value>Consumer Details</value>
+  </data>
+  <data name="DateOfBirth" xml:space="preserve">
+    <value>Date Of Birth</value>
+  </data>
+  <data name="DateOfDeath" xml:space="preserve">
+    <value>Date Of Death</value>
+  </data>
+  <data name="DiseaseName" xml:space="preserve">
+    <value>Disease Name</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="OR" xml:space="preserve">
+    <value>OR</value>
+  </data>
+  <data name="ParmanentAddress" xml:space="preserve">
+    <value>Parmanent Address</value>
+  </data>
+  <data name="PaymentDetails" xml:space="preserve">
+    <value>Payment Details</value>
+  </data>
+  <data name="PayOnlinePayment" xml:space="preserve">
+    <value>Pay Online Payment</value>
+  </data>
+  <data name="PendingPayment" xml:space="preserve">
+    <value>Pending Payment</value>
+  </data>
+  <data name="RegistrationNo" xml:space="preserve">
+    <value>Registration No</value>
+  </data>
+  <data name="ComplaintReceipt" xml:space="preserve">
+    <value>Complaint Receipt</value>
+  </data>
+  <data name="ComplaintRegisteredMessage" xml:space="preserve">
+    <value>Your Complaint Is Registered</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="PrintReceipt" xml:space="preserve">
+    <value>Print Receipt</value>
+  </data>
+  <data name="YourtokenID" xml:space="preserve">
+    <value>Your Token ID</value>
+  </data>
+  <data name="BirthDatePlaceholder" xml:space="preserve">
+    <value>Enter Birth Date- YYYY-MM-DD</value>
+  </data>
+  <data name="DataAvailabilityMessage" xml:space="preserve">
+    <value>data is available until 2015 only</value>
+  </data>
+  <data name="DeathDatePlaceholder" xml:space="preserve">
+    <value>Enter Death Date- YYYY-MM-DD</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="checkstatus" xml:space="preserve">
+    <value>Check Status</value>
+  </data>
+</root>

@@ -1,0 +1,1182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="and" xml:space="preserve">
+    <value>तथा</value>
+  </data>
+  <data name="Application" xml:space="preserve">
+    <value>आवेदन</value>
+  </data>
+  <data name="Auditorium" xml:space="preserve">
+    <value>सभागृह</value>
+  </data>
+  <data name="Booking" xml:space="preserve">
+    <value>बुकिंग</value>
+  </data>
+  <data name="Bus" xml:space="preserve">
+    <value>बस टिकट</value>
+  </data>
+  <data name="CFC" xml:space="preserve">
+    <value>CFC</value>
+  </data>
+  <data name="Digital" xml:space="preserve">
+    <value>डिजिटल</value>
+  </data>
+  <data name="EAC" xml:space="preserve">
+    <value>EAC</value>
+  </data>
+  <data name="Emergency" xml:space="preserve">
+    <value>आपातकालीन</value>
+  </data>
+  <data name="Feedback" xml:space="preserve">
+    <value>प्रतिक्रिया</value>
+  </data>
+  <data name="Griveance" xml:space="preserve">
+    <value>शिकायत</value>
+  </data>
+  <data name="Helpline" xml:space="preserve">
+    <value>हेल्पलाइन</value>
+  </data>
+  <data name="Information" xml:space="preserve">
+    <value>जानकारी</value>
+  </data>
+  <data name="locations" xml:space="preserve">
+    <value>स्थानों</value>
+  </data>
+  <data name="Management" xml:space="preserve">
+    <value>प्रबंध</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>मोबाइल</value>
+  </data>
+  <data name="Movie" xml:space="preserve">
+    <value>चलचित्र</value>
+  </data>
+  <data name="other" xml:space="preserve">
+    <value>अन्य</value>
+  </data>
+  <data name="Payments" xml:space="preserve">
+    <value>भुगतान सेवाएँ</value>
+  </data>
+  <data name="Purchase" xml:space="preserve">
+    <value>खरीद</value>
+  </data>
+  <data name="Railway" xml:space="preserve">
+    <value>रेलवे टिकट</value>
+  </data>
+  <data name="Recharge" xml:space="preserve">
+    <value>रीचार्ज</value>
+  </data>
+  <data name="RTS" xml:space="preserve">
+    <value>आरटीएस</value>
+  </data>
+  <data name="Sarthi" xml:space="preserve">
+    <value>सारथी</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>सेवाएं</value>
+  </data>
+  <data name="Tickets" xml:space="preserve">
+    <value>टिकट</value>
+  </data>
+  <data name="Utilities" xml:space="preserve">
+    <value>उपयोगिता</value>
+  </data>
+  <data name="Various" xml:space="preserve">
+    <value>विभिन्न</value>
+  </data>
+  <data name="Abhi" xml:space="preserve">
+    <value />
+  </data>
+  <data name="across" xml:space="preserve">
+    <value>भर में</value>
+  </data>
+  <data name="Advertesment" xml:space="preserve">
+    <value>विज्ञापन</value>
+  </data>
+  <data name="alert" xml:space="preserve">
+    <value>चेतावनी</value>
+  </data>
+  <data name="assistance" xml:space="preserve">
+    <value />
+  </data>
+  <data name="attraction" xml:space="preserve">
+    <value>आकर्षण</value>
+  </data>
+  <data name="Audio" xml:space="preserve">
+    <value>ऑडियो</value>
+  </data>
+  <data name="AV" xml:space="preserve">
+    <value>ए वी</value>
+  </data>
+  <data name="Billing" xml:space="preserve">
+    <value>बिलिंग</value>
+  </data>
+  <data name="Bills" xml:space="preserve">
+    <value>विधेयकों</value>
+  </data>
+  <data name="Birth" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Body" xml:space="preserve">
+    <value>तन</value>
+  </data>
+  <data name="Card" xml:space="preserve">
+    <value>कार्ड</value>
+  </data>
+  <data name="center" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Centers" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Certificate" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Chinchwad" xml:space="preserve">
+    <value>चिंचवड</value>
+  </data>
+  <data name="Citizen" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Common" xml:space="preserve">
+    <value>सामान्य</value>
+  </data>
+  <data name="connect" xml:space="preserve">
+    <value>जुडिये</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>संपर्क करें</value>
+  </data>
+  <data name="Contacts" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Dakhla" xml:space="preserve">
+    <value />
+  </data>
+  <data name="details" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Didital" xml:space="preserve">
+    <value>डिजिटल</value>
+  </data>
+  <data name="DropBox" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ECB" xml:space="preserve">
+    <value>SSS</value>
+  </data>
+  <data name="environmental" xml:space="preserve">
+    <value>पर्यावरण</value>
+  </data>
+  <data name="etc" xml:space="preserve">
+    <value>आदि</value>
+  </data>
+  <data name="Facilitation" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Facilities" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Facluty" xml:space="preserve">
+    <value>संकाय</value>
+  </data>
+  <data name="Fi" xml:space="preserve">
+    <value>फाई</value>
+  </data>
+  <data name="For" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Governance" xml:space="preserve">
+    <value>शासन</value>
+  </data>
+  <data name="government" xml:space="preserve">
+    <value>सरकार</value>
+  </data>
+  <data name="help" xml:space="preserve">
+    <value>मदद</value>
+  </data>
+  <data name="hi" xml:space="preserve">
+    <value />
+  </data>
+  <data name="hotels" xml:space="preserve">
+    <value>होटल</value>
+  </data>
+  <data name="ICCC" xml:space="preserve">
+    <value>ICCC</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Integration" xml:space="preserve">
+    <value>एकीकरण</value>
+  </data>
+  <data name="into" xml:space="preserve">
+    <value>में</value>
+  </data>
+  <data name="Kiosk" xml:space="preserve">
+    <value>कीओस्क</value>
+  </data>
+  <data name="Local" xml:space="preserve">
+    <value>स्थानीय</value>
+  </data>
+  <data name="location" xml:space="preserve">
+    <value>स्थान</value>
+  </data>
+  <data name="Make" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Managment" xml:space="preserve">
+    <value />
+  </data>
+  <data name="me" xml:space="preserve">
+    <value>मुझे</value>
+  </data>
+  <data name="MI" xml:space="preserve">
+    <value>एमआई</value>
+  </data>
+  <data name="My" xml:space="preserve">
+    <value />
+  </data>
+  <data name="near" xml:space="preserve">
+    <value>पास में</value>
+  </data>
+  <data name="offices" xml:space="preserve">
+    <value>कार्यालयों</value>
+  </data>
+  <data name="Part" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Payment" xml:space="preserve">
+    <value>भुगतान</value>
+  </data>
+  <data name="PCMC" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Pimpri" xml:space="preserve">
+    <value>पिंपरी</value>
+  </data>
+  <data name="Places" xml:space="preserve">
+    <value>स्थान</value>
+  </data>
+  <data name="Plan" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PMPML" xml:space="preserve">
+    <value>पीएमपीएमएल एमआय कार्ड रिचार्ज</value>
+  </data>
+  <data name="Police" xml:space="preserve">
+    <value>पुलिस</value>
+  </data>
+  <data name="Property" xml:space="preserve">
+    <value>संपत्ति</value>
+  </data>
+  <data name="Public" xml:space="preserve">
+    <value />
+  </data>
+  <data name="raise" xml:space="preserve">
+    <value>उठाना</value>
+  </data>
+  <data name="Red" xml:space="preserve">
+    <value />
+  </data>
+  <data name="routes" xml:space="preserve">
+    <value>मार्गों</value>
+  </data>
+  <data name="RTI" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Sarathi" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Sarkar" xml:space="preserve">
+    <value />
+  </data>
+  <data name="sensors" xml:space="preserve">
+    <value>सेंसर</value>
+  </data>
+  <data name="shops" xml:space="preserve">
+    <value>दुकानें</value>
+  </data>
+  <data name="Slum" xml:space="preserve">
+    <value>झोपडपट्टी</value>
+  </data>
+  <data name="Smartcity" xml:space="preserve">
+    <value />
+  </data>
+  <data name="soliticing" xml:space="preserve">
+    <value>प्रार्थना</value>
+  </data>
+  <data name="space" xml:space="preserve">
+    <value>अंतरिक्ष</value>
+  </data>
+  <data name="Spots" xml:space="preserve">
+    <value>स्पॉट</value>
+  </data>
+  <data name="Stations" xml:space="preserve">
+    <value>स्टेशनों</value>
+  </data>
+  <data name="Tax" xml:space="preserve">
+    <value>कर</value>
+  </data>
+  <data name="Telephone" xml:space="preserve">
+    <value>टेलीफोन</value>
+  </data>
+  <data name="through" xml:space="preserve">
+    <value>के माध्यम से</value>
+  </data>
+  <data name="toilet" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tourist" xml:space="preserve">
+    <value>पर्यटक</value>
+  </data>
+  <data name="Tourists" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Trip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Utility" xml:space="preserve">
+    <value>इतर </value>
+  </data>
+  <data name="Video" xml:space="preserve">
+    <value>वीडियो</value>
+  </data>
+  <data name="Ward" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Water" xml:space="preserve">
+    <value>पानी</value>
+  </data>
+  <data name="Wi" xml:space="preserve">
+    <value>वाई</value>
+  </data>
+  <data name="with" xml:space="preserve">
+    <value>साथ में</value>
+  </data>
+  <data name="Zone" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Apllication" xml:space="preserve">
+    <value>आवेदन</value>
+  </data>
+  <data name="am" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Ticket" xml:space="preserve">
+    <value>टिकट</value>
+  </data>
+  <data name="AbhiBus" xml:space="preserve">
+    <value>अभिबस</value>
+  </data>
+  <data name="ClearTrip" xml:space="preserve">
+    <value>क्लियरट्रिप</value>
+  </data>
+  <data name="MakeMyTrip" xml:space="preserve">
+    <value>मेकमायट्रिप</value>
+  </data>
+  <data name="RedBus" xml:space="preserve">
+    <value>रेडबस</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>to</value>
+  </data>
+  <data name="Ambulance" xml:space="preserve">
+    <value>रुग्ण वाहन</value>
+  </data>
+  <data name="Bank" xml:space="preserve">
+    <value>बैंक</value>
+  </data>
+  <data name="Blood" xml:space="preserve">
+    <value>रक्त</value>
+  </data>
+  <data name="Brigade" xml:space="preserve">
+    <value>दल</value>
+  </data>
+  <data name="Chemist" xml:space="preserve">
+    <value>केमिस्ट</value>
+  </data>
+  <data name="Fire" xml:space="preserve">
+    <value>अग्निशामक</value>
+  </data>
+  <data name="Hospitals" xml:space="preserve">
+    <value>अस्पताल</value>
+  </data>
+  <data name="of" xml:space="preserve">
+    <value>की</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>8888 00 6666</value>
+  </data>
+  <data name="Resources" xml:space="preserve">
+    <value>हेल्पलाइन</value>
+  </data>
+  <data name="Aplesarkar" xml:space="preserve">
+    <value>आपकी सरकार</value>
+  </data>
+  <data name="localbodytax" xml:space="preserve">
+    <value>स्थानीय बॉडी टैक्स</value>
+  </data>
+  <data name="otherservice" xml:space="preserve">
+    <value>अन्य सेवाएं</value>
+  </data>
+  <data name="propertytax" xml:space="preserve">
+    <value>संपत्ती कर</value>
+  </data>
+  <data name="slumbilling" xml:space="preserve">
+    <value>झोपडपट्टी कर</value>
+  </data>
+  <data name="watertax" xml:space="preserve">
+    <value>जल बिलिंग</value>
+  </data>
+  <data name="entertainment" xml:space="preserve">
+    <value>मनोरंजन</value>
+  </data>
+  <data name="GrievanceFeedback" xml:space="preserve">
+    <value>शिकायत प्रतिक्रिया</value>
+  </data>
+  <data name="InformationServices" xml:space="preserve">
+    <value>जानकारी सेवाएं</value>
+  </data>
+  <data name="PaymentServices" xml:space="preserve">
+    <value>भुगतान सेवाएँ</value>
+  </data>
+  <data name="RTSServices" xml:space="preserve">
+    <value>आरटीएस सेवाएँ</value>
+  </data>
+  <data name="transport" xml:space="preserve">
+    <value>सार्वजनिक परिवाहन</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>पीछे की ओर</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>मुख्य पृष्ठ</value>
+  </data>
+  <data name="telephoneRecharge" xml:space="preserve">
+    <value>टेलीफोन / मोबाइल बिल / रिचार्ज</value>
+  </data>
+  <data name="Smartcityline" xml:space="preserve">
+    <value>पिंपरी चिंचवड स्मार्ट सिटी लिमिटेड</value>
+  </data>
+  <data name="birthcertificate" xml:space="preserve">
+    <value>जन्म प्रमाणपत्र</value>
+  </data>
+  <data name="btnpayment" xml:space="preserve">
+    <value>भुगतान करो</value>
+  </data>
+  <data name="btnshow" xml:space="preserve">
+    <value>प्रदर्शन</value>
+  </data>
+  <data name="lblAddress" xml:space="preserve">
+    <value>पता :</value>
+  </data>
+  <data name="lblbalance" xml:space="preserve">
+    <value>शेष :</value>
+  </data>
+  <data name="lblconsumerid" xml:space="preserve">
+    <value>ग्राहक आयडी :</value>
+  </data>
+  <data name="lbledit" xml:space="preserve">
+    <value>संपादित करें </value>
+  </data>
+  <data name="lblGatNo" xml:space="preserve">
+    <value>वार्ड संख्या :</value>
+  </data>
+  <data name="lblMiyakatNo" xml:space="preserve">
+    <value>संप्तति संख्या :</value>
+  </data>
+  <data name="lblName" xml:space="preserve">
+    <value>नाम :</value>
+  </data>
+  <data name="lblVadhiv" xml:space="preserve">
+    <value>अतिरिक्त :</value>
+  </data>
+  <data name="lblward" xml:space="preserve">
+    <value>वार्ड</value>
+  </data>
+  <data name="lblZoneName" xml:space="preserve">
+    <value>क्षेत्र का नाम :</value>
+  </data>
+  <data name="lblZoneNumber" xml:space="preserve">
+    <value>जोन संख्या :</value>
+  </data>
+  <data name="partplanZoneDakhla" xml:space="preserve">
+    <value>शेयर योजना / जोन दखला</value>
+  </data>
+  <data name="RTIServices" xml:space="preserve">
+    <value>आरटीआई सेवाएँ</value>
+  </data>
+  <data name="bikerental" xml:space="preserve">
+    <value>दुचाकी  किराया</value>
+  </data>
+  <data name="CitizensFacilitationCenters" xml:space="preserve">
+    <value>नागरिक सुविधा केंद्र</value>
+  </data>
+  <data name="D2HRecharge" xml:space="preserve">
+    <value>डी 2 एच रिचार्ज</value>
+  </data>
+  <data name="DropboxService" xml:space="preserve">
+    <value>ड्रॉपबॉक्स सेवा</value>
+  </data>
+  <data name="emergencycontacts" xml:space="preserve">
+    <value>आपातकालीन संपर्क</value>
+  </data>
+  <data name="GriveanceManagment" xml:space="preserve">
+    <value>शिकायत व्यवस्थापन</value>
+  </data>
+  <data name="infofortourist" xml:space="preserve">
+    <value>पर्यटकों के लिए जानकारी</value>
+  </data>
+  <data name="Movies" xml:space="preserve">
+    <value>फ़िल्म</value>
+  </data>
+  <data name="publictoiletfeedback" xml:space="preserve">
+    <value>सार्वजनिक शौचालय प्रतिक्रिया</value>
+  </data>
+  <data name="smartcitynearme" xml:space="preserve">
+    <value>स्मार्ट सिटी सेवाएं</value>
+  </data>
+  <data name="Sports" xml:space="preserve">
+    <value>खेळ</value>
+  </data>
+  <data name="busbooking" xml:space="preserve">
+    <value>बस बुकिंग</value>
+  </data>
+  <data name="publictransport" xml:space="preserve">
+    <value>सार्वजनिक परिवाहन</value>
+  </data>
+  <data name="mobilerecharge" xml:space="preserve">
+    <value>मोबाइल रिचार्ज</value>
+  </data>
+  <data name="movieticket" xml:space="preserve">
+    <value>सिनेमा टिकट</value>
+  </data>
+  <data name="quicklinks" xml:space="preserve">
+    <value>अत्यावश्यक सेवा</value>
+  </data>
+  <data name="ESeverices" xml:space="preserve">
+    <value>ई-सेवाएं</value>
+  </data>
+  <data name="DeathCertificate" xml:space="preserve">
+    <value>मृत्यु प्रमाणपत्र</value>
+  </data>
+  <data name="BookMyShow" xml:space="preserve">
+    <value>बुकमायशो</value>
+  </data>
+  <data name="Grabon" xml:space="preserve">
+    <value>ग्रॅबॉन</value>
+  </data>
+  <data name="paytm" xml:space="preserve">
+    <value>पेटीएम</value>
+  </data>
+  <data name="Techibhai" xml:space="preserve">
+    <value>तेचि भाई</value>
+  </data>
+  <data name="EasyMobile" xml:space="preserve">
+    <value>इझीमोबाईल</value>
+  </data>
+  <data name="Freecharge" xml:space="preserve">
+    <value>फ्रीचार्ज</value>
+  </data>
+  <data name="Mobikwik" xml:space="preserve">
+    <value>मोबिक्विक</value>
+  </data>
+  <data name="UtilityServices" xml:space="preserve">
+    <value>उपयोगी सेवाएं</value>
+  </data>
+  <data name="leapbike" xml:space="preserve">
+    <value>लीपबाईक</value>
+  </data>
+  <data name="electricitybill" xml:space="preserve">
+    <value>बिजली बिल</value>
+  </data>
+  <data name="yulu" xml:space="preserve">
+    <value>यूलू बाईक</value>
+  </data>
+  <data name="ABD" xml:space="preserve">
+    <value>आदित्य बिड़ला अस्पताल</value>
+  </data>
+  <data name="ABMH" xml:space="preserve">
+    <value>आदित्य बिड़ला मेमोरियल अस्पताल</value>
+  </data>
+  <data name="ACPP" xml:space="preserve">
+    <value>A.C.P. पिंपरी</value>
+  </data>
+  <data name="AH" xml:space="preserve">
+    <value>आकुर्डी अस्पताल</value>
+  </data>
+  <data name="AHH" xml:space="preserve">
+    <value>आदित्य  होमियोपेंथिक अस्पताल</value>
+  </data>
+  <data name="AKBB" xml:space="preserve">
+    <value>आनंद कृशिजी ब्लड बैंक</value>
+  </data>
+  <data name="AKJHC" xml:space="preserve">
+    <value>आशाकिरण जुबली  होप  सेंटर</value>
+  </data>
+  <data name="APS" xml:space="preserve">
+    <value>आकुर्डी पोलिस चौकी</value>
+  </data>
+  <data name="BH" xml:space="preserve">
+    <value>भोसरी अस्पताल</value>
+  </data>
+  <data name="BillCloudPayment" xml:space="preserve">
+    <value>बिलक्लाउड द्वारा भुगतान</value>
+  </data>
+  <data name="BPS" xml:space="preserve">
+    <value>भोसरी पोलिस स्टेशन</value>
+  </data>
+  <data name="BRH" xml:space="preserve">
+    <value>बुरुटे हॉस्पिटल</value>
+  </data>
+  <data name="CardPayment" xml:space="preserve">
+    <value>कार्ड स्वैप द्वारा भुगतान</value>
+  </data>
+  <data name="CGPC" xml:space="preserve">
+    <value>चिंचवड गाव पोलिस चौकी</value>
+  </data>
+  <data name="DCPP" xml:space="preserve">
+    <value>D. C. P. पिंपरी</value>
+  </data>
+  <data name="DH" xml:space="preserve">
+    <value>दीनानाथ हॉस्पिटल</value>
+  </data>
+  <data name="DPC" xml:space="preserve">
+    <value>दापोडी पोलिस चौकी</value>
+  </data>
+  <data name="DVH" xml:space="preserve">
+    <value>देवधर हॉस्पिटल</value>
+  </data>
+  <data name="FBMF" xml:space="preserve">
+    <value>फकीर भाई मेडिकल फाउंडेशन</value>
+  </data>
+  <data name="GAVCFS" xml:space="preserve">
+    <value>जन.अरुणकुमार वैद्य मुख्य आग्निशमन केंद्र</value>
+  </data>
+  <data name="HJPS" xml:space="preserve">
+    <value>हिंजवडी पोलिस स्टेशन</value>
+  </data>
+  <data name="IB" xml:space="preserve">
+    <value>इन्लाक्स  बुध्रानी</value>
+  </data>
+  <data name="Irc" xml:space="preserve">
+    <value>इंडियन रेड क्रॉस</value>
+  </data>
+  <data name="ISIBB" xml:space="preserve">
+    <value>I.S.I. ब्लड बैंक</value>
+  </data>
+  <data name="JH" xml:space="preserve">
+    <value>जोशी  हॉस्पिटल</value>
+  </data>
+  <data name="JK" xml:space="preserve">
+    <value>जनकल्याण</value>
+  </data>
+  <data name="Jnh" xml:space="preserve">
+    <value>जहांगीर नर्सिंग होम</value>
+  </data>
+  <data name="Kanchan" xml:space="preserve">
+    <value>कांचन</value>
+  </data>
+  <data name="LHDS" xml:space="preserve">
+    <value>लोकमान्य  हॉस्पिटल  ड्रग  स्टोअर</value>
+  </data>
+  <data name="Nh" xml:space="preserve">
+    <value>निरामय अस्पताल</value>
+  </data>
+  <data name="PH" xml:space="preserve">
+    <value>पोतबघे हॉस्पिटल</value>
+  </data>
+  <data name="RBP" xml:space="preserve">
+    <value>स्वर्गीय राजेश बहल प्रतिष्ठान</value>
+  </data>
+  <data name="RCP" xml:space="preserve">
+    <value>रोटरी क्लब पुणे</value>
+  </data>
+  <data name="RJP" xml:space="preserve">
+    <value>राजमाता जीजाऊ प्रतिष्ठान</value>
+  </data>
+  <data name="RKM" xml:space="preserve">
+    <value>आर.के.मेडिको</value>
+  </data>
+  <data name="RMSSB" xml:space="preserve">
+    <value>राजमाता जिजाऊ उप अग्निशमन केंद्र भोसरी</value>
+  </data>
+  <data name="SFSP" xml:space="preserve">
+    <value>उप अग्निशमन केंद्र प्राधिकरण</value>
+  </data>
+  <data name="SFSR" xml:space="preserve">
+    <value>उप अग्निशमन केंद्र रहाटणी</value>
+  </data>
+  <data name="SFST" xml:space="preserve">
+    <value>उप अग्निशमन केंद्र तळवडे</value>
+  </data>
+  <data name="Shivsena" xml:space="preserve">
+    <value>शिवसेना</value>
+  </data>
+  <data name="ABD1" xml:space="preserve">
+    <value>पत्ता आदित्य बिर्ला हॉस्पिटल मार्ग, चिंचवड, पुणे 411033, संपर्क क्रमांक 30717500, 30717777</value>
+  </data>
+  <data name="ABD2" xml:space="preserve">
+    <value>पत्ता :- निगडी प्राधिकरण पुणे ४११ ०४४ दूरध्वनी क्रमांक :-९८२२२९१०७० मोबाईल क्रमांक :- ९८२२२९१०७०</value>
+  </data>
+  <data name="ABD3" xml:space="preserve">
+    <value>पत्ता :- संत तुकाराम नगर पिंपरी पुणे ४११ ०१८ दूरध्वनी क्रमांक :- ९८२२८८०७२२ आपत्कालीन क्रमांक :- मोबाईल क्रमांक :- ९८२२८८०७२२</value>
+  </data>
+  <data name="ABD4" xml:space="preserve">
+    <value>पत्ता :- चिंचवड पुणे ४११ ०१९ दूरध्वनी क्रमांक :- ९८२२९९८८९१ मोबाईल क्रमांक :- ९८२२९९८८९१</value>
+  </data>
+  <data name="ABD5" xml:space="preserve">
+    <value>पत्ता :- लांडेवाडी भोसरी पुणे ४११ ०३९ दूरध्वनी क्रमांक :-९८५०१७६८६८ मोबाईल क्रमांक :- ९८५०१७६८६८</value>
+  </data>
+  <data name="ABD6" xml:space="preserve">
+    <value>पत्ता :- चिंचवड पुणे ४११ ०१९ दूरध्वनी क्रमांक :-९८२२०७३७६० मोबाईल क्रमांक :- ९८२२०७३७६०</value>
+  </data>
+  <data name="ABD7" xml:space="preserve">
+    <value>पत्ता :- मोहननगर चिंचवड पुणे ४११ ०१९ दूरध्वनी क्रमांक :-९८२२५४४१९९ मोबाईल क्रमांक :- ९८२२५४४१९९</value>
+  </data>
+  <data name="CH1" xml:space="preserve">
+    <value>पत्ता : पिंपरी पुणे दूरध्वनी क्रमांक : २५६७२५६३ मोबाईल क्रमांक :</value>
+  </data>
+  <data name="CH2" xml:space="preserve">
+    <value>पत्ता : पिंपरी पुणे दूरध्वनी क्रमांक : २६१२२३२९ मोबाईल क्रमांक :</value>
+  </data>
+  <data name="CH3" xml:space="preserve">
+    <value>पत्ता : चिंचवड स्टेशन पुणे दूरध्वनी क्रमांक : २७४८२००३, मोबाईल क्रमांक :</value>
+  </data>
+  <data name="CH4" xml:space="preserve">
+    <value>पत्ता : चिंचवड पोस्ट ऑफिस च्या जवळ, देसाई पेट्रोल पंप च्या मागे, मुंबई पुणे रोड चिंचवड. पुणे दूरध्वनी क्रमांक : २४४१८६० मोबाईल क्रमांक :</value>
+  </data>
+  <data name="CH5" xml:space="preserve">
+    <value>पत्ता : पिंपरी . पुणे दूरध्वनी क्रमांक : २५५८२७७० मोबाईल क्रमांक :</value>
+  </data>
+  <data name="CH6" xml:space="preserve">
+    <value>पत्ता : चिंचवड स्टेशन . पुणे मोबाईल क्रमांक : ९८२२२९०८१०</value>
+  </data>
+  <data name="BB1" xml:space="preserve">
+    <value>पत्ता : पुणे पुणे दूरध्वनी क्रमांक : २४३७६२७ मोबाईल क्रमांक :-</value>
+  </data>
+  <data name="BB2" xml:space="preserve">
+    <value>पत्ता :-पुणे पुणे दूरध्वनी क्रमांक :२४०२३००७ मोबाईल क्रमांक :-</value>
+  </data>
+  <data name="BB3" xml:space="preserve">
+    <value>पत्ता : पुणे पुणे दूरध्वनी क्रमांक :२४३३५२४४ , मोबाईल क्रमांक :-</value>
+  </data>
+  <data name="BB4" xml:space="preserve">
+    <value>पत्ता :-पुणे पुणे दूरध्वनी क्रमांक : २६१२०९५० , २६१२०९५० मोबाईल क्रमांक :-</value>
+  </data>
+  <data name="BB5" xml:space="preserve">
+    <value>पत्ता :-पुणे पुणे दूरध्वनी क्रमांक :२४१२९७२७ मोबाईल क्रमांक :-</value>
+  </data>
+  <data name="BB6" xml:space="preserve">
+    <value>पत्ता : पुणे पुणे दूरध्वनी क्रमांक : २६१२२५५१ मोबाईल क्रमांक :-</value>
+  </data>
+  <data name="BB7" xml:space="preserve">
+    <value>पत्ता :-पुणे पुणे दूरध्वनी क्रमांक : २४४४९५२७ मोबाईल क्रमांक :-</value>
+  </data>
+  <data name="FB1" xml:space="preserve">
+    <value>पत्ता :- संत तुकाराम नगर पिंपरी पुणे ४११०१८ दूरध्वनी क्रमांक :-२७४२३३३३ , २७४२५४०५ आपत्कालीन क्रमांक :- १०१ मोबाईल क्रमांक :- 9922501475</value>
+  </data>
+  <data name="FB2" xml:space="preserve">
+    <value>लांडेवाड़ी भोसरी मो.9922501476</value>
+  </data>
+  <data name="FB3" xml:space="preserve">
+    <value>पत्ता :-उप अग्निशमन केंद्र प्राधिकरण निगडी पुणे ४११ ०४४ दूरध्वनी क्रमांक :-२७६५२०६६ आपत्कालीन क्रमांक :- १०१ मोबाईल क्रमांक :- 992250147</value>
+  </data>
+  <data name="FB4" xml:space="preserve">
+    <value>पत्ता :- ओंध रोड काळेवाडी फाटा रहाटणी पुणे ४११०४४ दूरध्वनी क्रमांक :-20270881 आपत्कालीन क्रमांक :- १०१ मोबाईल क्रमांक :- 9922501478</value>
+  </data>
+  <data name="FB5" xml:space="preserve">
+    <value>पत्ता :- सॉफ्टवेअर पार्क चौक लक्ष्मीनगर तळवडे दूरध्वनी क्रमांक :-27690101 आपत्कालीन क्रमांक :- १०१ मोबाईल क्रमांक :-9552523101</value>
+  </data>
+  <data name="H1" xml:space="preserve">
+    <value>आदित्य बिर्ला हॉस्पिटल मार्ग, चिंचवड पुणे ३३ फ़ोन ०२०-३०७१७७७७</value>
+  </data>
+  <data name="H2" xml:space="preserve">
+    <value>पत्ता :- पिंपरी पुणे दूरध्वनी क्रमांक :- २७४१२५४९ मोबाईल क्रमांक :- २७४१२५४९</value>
+  </data>
+  <data name="H3" xml:space="preserve">
+    <value>पत्ता :-आकुर्डी चौक शेजारी पुणे दूरध्वनी क्रमांक :-७४८३६९५ मोबाईल क्रमांक :-</value>
+  </data>
+  <data name="H4" xml:space="preserve">
+    <value>पत्ता :-सर्वे नं -१३८ शेजारी अन्द्रेव्स शाळा पुणे दूरध्वनी क्रमांक :-५६३२०४६२ मोबाईल क्रमांक :-</value>
+  </data>
+  <data name="H5" xml:space="preserve">
+    <value>पत्ता :-पी.सी.एम.टी. बस डेपो जवळ भोसरी पुणे दूरध्वनी क्रमांक :- २७१२००८९ मोबाईल क्रमांक :-</value>
+  </data>
+  <data name="H6" xml:space="preserve">
+    <value>पत्ता :- रुपी बँक पुणे नाशिक रोड पुणे दूरध्वनी क्रमांक :- २७१२२२३२ मोबाईल क्रमांक :- २७१२२२३२</value>
+  </data>
+  <data name="H7" xml:space="preserve">
+    <value>पत्ता :-तपोवन मंदिरा शेजारी पुणे दूरध्वनी क्रमांक :- २७४१०९३९ मोबाईल क्रमांक :- २७४१०९३९</value>
+  </data>
+  <data name="P1" xml:space="preserve">
+    <value>पत्ता :- A .C .P ऑफिस नेहरु नगर पिंपरी पुणे ४११०१८ दूरध्वनी क्रमांक :-27123121 मोबाईल क्रमांक :-</value>
+  </data>
+  <data name="P2" xml:space="preserve">
+    <value>आकुर्डी दूरध्वनी २७६५००३६</value>
+  </data>
+  <data name="P3" xml:space="preserve">
+    <value>पत्ता :-भोसरी चौक शिवाजी पुतळ्या समोर भोसरी पुणे दुरद्यानी क्रमांक :27124728 आपत्कालीन क्रमांक :- १०० मोबाईल क्रमांक :-</value>
+  </data>
+  <data name="P4" xml:space="preserve">
+    <value>पत्ता :-चाफेकर चौक चिंचवड गाव चिंचवड पुणे दूरध्वनी क्रमांक :27356767 आपत्कालीन क्रमांक :- १००</value>
+  </data>
+  <data name="P5" xml:space="preserve">
+    <value>पत्ता :-मुंबई पुणे रोड प्रिमिअर प्लाझा पिंपरी पुणे दूरध्वनी क्रमांक :२७४८७७७७ आपत्कालीन क्रमांक :- १००</value>
+  </data>
+  <data name="P6" xml:space="preserve">
+    <value>पत्ता :-मुंबई पुणे रोड दापोडी पुणे दूरध्वनी क्रमांक :२७१४९५३८ आपत्कालीन क्रमांक :- १००</value>
+  </data>
+  <data name="P7" xml:space="preserve">
+    <value>पत्ता :-हिंजवडी वाकड पुणे दूरध्वनी क्रमांक : २२९३४६२२ / २२९३२११९ आपत्कालीन क्रमांक :- १००</value>
+  </data>
+  <data name="Paymentsss" xml:space="preserve">
+    <value>भुगतान सेवाएँ</value>
+  </data>
+  <data name="Police1" xml:space="preserve">
+    <value>पिंपरी पुलिस स्टेशन</value>
+  </data>
+  <data name="Police10" xml:space="preserve">
+    <value>वाकड पुलिस स्टेशन</value>
+  </data>
+  <data name="Police11" xml:space="preserve">
+    <value>दिघी पुलिस स्टेशन</value>
+  </data>
+  <data name="Police12" xml:space="preserve">
+    <value>तळेगाव एमआयडीसी</value>
+  </data>
+  <data name="Police13" xml:space="preserve">
+    <value>देहूरोड पुलिस स्टेशन</value>
+  </data>
+  <data name="Police14" xml:space="preserve">
+    <value>चाकण पुलिस स्टेशन</value>
+  </data>
+  <data name="Police15" xml:space="preserve">
+    <value>चिखली पुलिस स्टेशन</value>
+  </data>
+  <data name="Police2" xml:space="preserve">
+    <value>भोसरी पुलिस स्टेशन</value>
+  </data>
+  <data name="Police3" xml:space="preserve">
+    <value>आलंदी पुलिस स्टेशन</value>
+  </data>
+  <data name="Police4" xml:space="preserve">
+    <value>चिंचवड़ पुलिस स्टेशन</value>
+  </data>
+  <data name="Police5" xml:space="preserve">
+    <value>निगाड़ी पुलिस स्टेशन</value>
+  </data>
+  <data name="Police6" xml:space="preserve">
+    <value>तालेगांव दाभड पुलिस स्टेशन</value>
+  </data>
+  <data name="Police7" xml:space="preserve">
+    <value>MIDC भोसरी पुलिस स्टेशन</value>
+  </data>
+  <data name="Police8" xml:space="preserve">
+    <value>सांगरी पुलिस स्टेशन</value>
+  </data>
+  <data name="Police9" xml:space="preserve">
+    <value>हिंजवडी पुलिस स्टेशन</value>
+  </data>
+  <data name="NewGrievance" xml:space="preserve">
+    <value>नई शिकायत</value>
+  </data>
+  <data name="AadhaarNo" xml:space="preserve">
+    <value>आधार नं.</value>
+  </data>
+  <data name="Area" xml:space="preserve">
+    <value>क्षेत्र</value>
+  </data>
+  <data name="BeneficiarysFirstName" xml:space="preserve">
+    <value>लाभार्थी का पहला नाम</value>
+  </data>
+  <data name="Beneficiaryslastname" xml:space="preserve">
+    <value>लाभार्थी का अंतिम नाम</value>
+  </data>
+  <data name="BeneficiarysNameofFatherorHusband" xml:space="preserve">
+    <value>लाभार्थी के पिता / पति का नाम</value>
+  </data>
+  <data name="CFCOrApplicationNo" xml:space="preserve">
+    <value>सीएफसी / आवेदन नंबर</value>
+  </data>
+  <data name="ElectionDivision" xml:space="preserve">
+    <value>चुनाव प्रभाग</value>
+  </data>
+  <data name="EligibleOrIneligible" xml:space="preserve">
+    <value>योग्य / अयोग्य</value>
+  </data>
+  <data name="MobileNo" xml:space="preserve">
+    <value>मोबाइल नंबर</value>
+  </data>
+  <data name="naagarvastivibhag" xml:space="preserve">
+    <value>शहरी निपटान विभाग</value>
+  </data>
+  <data name="originalplan" xml:space="preserve">
+    <value>मूल योजना</value>
+  </data>
+  <data name="Regionaloffice" xml:space="preserve">
+    <value>क्षेत्रीय कार्यालय</value>
+  </data>
+  <data name="Subplan" xml:space="preserve">
+    <value>उप योजना</value>
+  </data>
+  <data name="WardFacilities" xml:space="preserve">
+    <value>वार्ड की सुविधाएं</value>
+  </data>
+  <data name="eligible" xml:space="preserve">
+    <value>योग्य</value>
+  </data>
+  <data name="Ineligible" xml:space="preserve">
+    <value>अयोग्य</value>
+  </data>
+  <data name="LICPremiumPayment" xml:space="preserve">
+    <value>एलआईसी प्रीमियम भुगतान</value>
+  </data>
+  <data name="Select" xml:space="preserve">
+    <value>चुनें</value>
+  </data>
+  <data name="PayU" xml:space="preserve">
+    <value>पेयू (PayU)</value>
+  </data>
+  <data name="PPZD" xml:space="preserve">
+    <value>भाग योजना / क्षेत्र दखला</value>
+  </data>
+  <data name="FB6" xml:space="preserve">
+    <value>चिकली फायर स्टेशन एल.एल. मोबाइल नंबर 02027494849</value>
+  </data>
+  <data name="FB7" xml:space="preserve">
+    <value>चिकली फायर स्टेशन के मोबाइल नं. 8669694101</value>
+  </data>
+  <data name="CFS1" xml:space="preserve">
+    <value>चिकली फायर स्टेशन एल.एल. मोबाइल नंबर</value>
+  </data>
+  <data name="CFS2" xml:space="preserve">
+    <value>चिकली फायर स्टेशन के मोबाइल नं</value>
+  </data>
+  <data name="goback" xml:space="preserve">
+    <value>वापस</value>
+  </data>
+  <data name="description" xml:space="preserve">
+    <value>विवरण</value>
+  </data>
+  <data name="getbilldetailsbyhutnumber" xml:space="preserve">
+    <value>हट नंबर से बिल का विवरण प्राप्त करें</value>
+  </data>
+  <data name="Hut" xml:space="preserve">
+    <value>झोपडी</value>
+  </data>
+  <data name="Hutno" xml:space="preserve">
+    <value>झोपडी क्रमांक</value>
+  </data>
+  <data name="mailid" xml:space="preserve">
+    <value>ईमेल आईडी</value>
+  </data>
+  <data name="mobilenum" xml:space="preserve">
+    <value>मोबाइल नंबर</value>
+  </data>
+  <data name="Paidamount" xml:space="preserve">
+    <value>भुगतान राशि</value>
+  </data>
+  <data name="Payableamount" xml:space="preserve">
+    <value>भुगतान योग्य राशि</value>
+  </data>
+  <data name="Previousdemand" xml:space="preserve">
+    <value>पिछली मांग</value>
+  </data>
+  <data name="Show" xml:space="preserve">
+    <value>प्रदर्शन</value>
+  </data>
+  <data name="subjectlist" xml:space="preserve">
+    <value>विषय सूची</value>
+  </data>
+  <data name="Usage" xml:space="preserve">
+    <value>प्रयोग</value>
+  </data>
+  <data name="ChildName" xml:space="preserve">
+    <value>बच्चे का नाम</value>
+  </data>
+  <data name="ConsumerDetails" xml:space="preserve">
+    <value>उपभोक्ता विवरण</value>
+  </data>
+  <data name="DateOfBirth" xml:space="preserve">
+    <value>जन्म की तारीख</value>
+  </data>
+  <data name="DateOfDeath" xml:space="preserve">
+    <value>मृत्यु तिथि</value>
+  </data>
+  <data name="DiseaseName" xml:space="preserve">
+    <value>रोग का नाम</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>लिंग</value>
+  </data>
+  <data name="OR" xml:space="preserve">
+    <value>या</value>
+  </data>
+  <data name="ParmanentAddress" xml:space="preserve">
+    <value>स्थाई पता</value>
+  </data>
+  <data name="PaymentDetails" xml:space="preserve">
+    <value>भुगतान विवरण</value>
+  </data>
+  <data name="PayOnlinePayment" xml:space="preserve">
+    <value>ऑनलाइन भुगतान करें</value>
+  </data>
+  <data name="PendingPayment" xml:space="preserve">
+    <value>लंबित भुगतान</value>
+  </data>
+  <data name="RegistrationNo" xml:space="preserve">
+    <value>पंजीकरण क्रमांक</value>
+  </data>
+  <data name="ComplaintReceipt" xml:space="preserve">
+    <value>शिकायत रसीद</value>
+  </data>
+  <data name="ComplaintRegisteredMessage" xml:space="preserve">
+    <value>आपकी शिकायत दर्ज कर ली गई है</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>तारीख</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>नाम</value>
+  </data>
+  <data name="PrintReceipt" xml:space="preserve">
+    <value>रसीद छपाई</value>
+  </data>
+  <data name="YourtokenID" xml:space="preserve">
+    <value>आपकी टोकन आईडी</value>
+  </data>
+  <data name="BirthDatePlaceholder" xml:space="preserve">
+    <value>जन्म तिथि दर्ज करें- YYYY-MM-DD</value>
+  </data>
+  <data name="DataAvailabilityMessage" xml:space="preserve">
+    <value>डेटा केवल 2015 तक उपलब्ध है</value>
+  </data>
+  <data name="DeathDatePlaceholder" xml:space="preserve">
+    <value>मृत्यु की तारीख दर्ज करें - YYYY-MM-DD</value>
+  </data>
+  <data name="Note" xml:space="preserve">
+    <value>ध्यान दें</value>
+  </data>
+</root>

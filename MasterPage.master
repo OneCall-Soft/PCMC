@@ -1,0 +1,374 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="google" content="notranslate">
+    <meta charset="utf-8">
+    <title>Lipi Wizard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="favicon.ico">
+
+    <!--Google Font link-->
+    <%-- <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">--%>
+
+    <link href="css/fontawesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/swiper.min.css" />
+    <link href="css/fontawesome.min.css" rel="stylesheet" />
+    <link href="css/brands.css" rel="stylesheet" />
+    <link href="css/brands.min.css" rel="stylesheet" />
+    <link href="css/all.css" rel="stylesheet" />
+    <link href="css/all.min.css" rel="stylesheet" />
+
+    <!--<link rel="stylesheet" href="assets/css/animate.css">-->
+    <!--<link rel="stylesheet" href="assets/css/iconfont.css">-->
+    <!--<link rel="stylesheet" href="assets/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="assets/css/magnific-popup.css">-->
+    <!--<link rel="stylesheet" href="assets/css/bootsnav.css">-->
+    <link rel="stylesheet" href="assets/css/slider.css">
+
+    <link rel="stylesheet" href="assets/css/a.css">
+
+
+
+    <!--For Plugins external css-->
+    <!--<link rel="stylesheet" href="assets/css/plugins.css" />-->
+    <!--Theme custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/style9.css">
+
+    <!--Theme Responsive css-->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+</head>
+
+
+
+
+    <script type="text/javascript">
+        if (document.layers) {
+            //Capture the MouseDown event.
+            document.captureEvents(Event.MOUSEDOWN);
+            //Disable the OnMouseDown event handler.
+            document.onmousedown = function () {
+                return false;
+            };
+        }
+        else {
+            //Disable the OnMouseUp event handler.
+            document.onmouseup = function (e) {
+                if (e != null && e.type == "mouseup") {
+                    //Check the Mouse Button which is clicked.
+                    if (e.which == 2 || e.which == 3) {
+                        //If the Button is middle or right then disable.
+                        return false;
+                    }
+                }
+            };
+        }
+
+        //Disable the Context Menu event.
+        document.oncontextmenu = function () {
+            return false;
+        };
+
+
+        $(document).ready(function () {
+            function disablePrev() { window.history.forward() }
+            window.onload = disablePrev();
+            window.onpageshow = function (evt) { if (evt.persisted) disableBack() }
+        });
+
+    </script>
+
+<script type="text/javascript">
+    function myFunction() {
+
+        document.getElementById("BTN1").style.display = "none";
+        document.getElementById("BTN2").style.display = "block";
+    }
+
+
+
+  
+
+
+
+
+    //function demo1()
+    //{
+
+    //}
+
+    //function refreshPage()
+    //{
+    //    location.reload();
+    //}
+    //function func1()
+    //{
+    //    window.location.href = "exit.html";
+    //}
+</script>
+
+<style type="text/css">
+    .quickOuter ul {
+        list-style: none;
+        float: left;
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 15px;
+    }
+
+        .quickOuter ul li {
+            float: left;
+            width: 25.3333%;
+            border: 1px solid #d9dae5;
+            transition: all 0.5s;
+        }
+
+    .quickOuter ul {
+        list-style: none;
+        float: left;
+        width: 100%;
+        padding-left: 0;
+        margin-bottom: 15px;
+    }
+
+        .quickOuter ul li a {
+            font-size: 20px;
+            color: #41424c;
+            padding: 16px 0 16px 40px;
+            display: block;
+            position: relative;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+            .quickOuter ul li a i {
+                margin-right: 15px;
+                position: absolute;
+                top: 31px;
+                left: 35px;
+                font-size: 18px;
+            }
+
+    .fa {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        /*font-size: inherit;*/
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        /*-moz-osx-font-smoothing: grayscale;*/
+    }
+
+    .quickOuter ul li a {
+        /*font-size: 20px;*/
+        color: #41424c;
+        /*padding: 25px 0 25px 70px;
+    display: block;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;*/
+    }
+
+    ul, ol {
+        margin-top: 0;
+    }
+</style>
+<body data-spy="scroll" data-target=".navbar-collapse">
+
+    <form id="form1" runat="server">
+
+      <a class="weatherwidget-io" href="https://forecast7.com/en/18d6373d80/pimpri-chinchwad/" data-label_1="PIMPRI-CHINCHWAD" data-label_2="WEATHER" data-icons="Climacons Animated" data-days="3" data-theme="ruby" data-basecolor="#eb0029" data-shadow="#" data-highcolor="#ffffff" data-lowcolor="#ffffff" data-cloudfill="#ffffff">PIMPRI-CHINCHWAD WEATHER</a>
+
+        <%-- kuldeep- very Imp hiding the weather api --%>
+        <div style="height: 130px; background-color: rgba(255, 255, 255, 0); z-index: 137; position: fixed; top: 0; width: 100%;"></div>
+        <%-- imp div --%>
+
+
+        <div id="loading">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object" id="object_one"></div>
+                    <div class="object" id="object_two"></div>
+                    <div class="object" id="object_three"></div>
+                    <div class="object" id="object_four"></div>
+                </div>
+            </div>
+        </div>
+        <!--End off Preloader -->
+
+
+        <div class="culmn">
+            <!--Home page style-->
+            <!--Home Sections-->
+
+
+            <section id="home" class="home">
+                <div style="padding-right: 78%">
+                    <img src="images/logo.png" <%-- class="clearfix"--%> />
+
+
+
+                </div>
+                <div style="margin-top: -4%;">
+                    <h2 style="color: #eb0029">SMART CITY KIOSK</h2>
+                </div>
+                <hr style="border: 5px solid #eb0029">
+
+
+                <div class="container">
+
+
+                    <div class="row">
+                        <div class="main_home">
+                            <div id="div1" class="col-md-6">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> </asp:ContentPlaceHolder>
+                               
+                              
+                            </div>
+                            <div class="col-md-6">
+
+
+
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                                </asp:ContentPlaceHolder>
+
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-12" style="margin-top: -14%">
+                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server"></asp:ContentPlaceHolder>
+
+                                </div>
+
+                            </div>
+
+
+                            <%--    <div class="col-md-6">
+                            
+                                <!--<div class="attr_deg">BILLS</div>-->
+                                <!--<div class="attr_rio text-uppercase">BILLS</div>-->
+                                <!--<div class="attr_sun text-uppercase text-white">E-SEVA</div>
+                                <div class="attr_lon text-uppercase text-white">SERVICES</div>-->
+                                <!--<div id="slider">
+                                <figure>-->
+                            <div style="margin-left:30%;width:85%" >
+                                <img src="assets/images/bhuvaneshwar.png" CssClass="img-responsive" alt="" />
+                                </div>
+                                <!--<img src="assets/images/kiosk1.png">
+                                        <img src="assets/images/kiosk2.png">
+                                        <img src="assets/images/kiosk3.png">
+                                        <img src="assets/images/lipi.png">
+                                    </figure>
+                                </div>-->
+                               
+                          
+
+                        </div>--%>
+
+                            <div class="home_btns m-top-40" id="ballMenuContainer">
+
+                                <div id="menuBall1" class="menuBall">
+                                    <!--<a href="javascript:refreshPage()" class="ball yellowball">
+                                    <div class="menuText">
+                                        HOME
+                                    </div>
+                                </a>-->
+                                </div>
+                               <%-- <div id="menuBall2" class="menuBall" style="margin-top: -40%;">
+                                    <a href="Home.aspx" class="ball red" style="margin-top: -40%;">
+                                        <div class="menuText">
+                                            HOME
+                                        </div>
+                                    </a>--%>
+                                    <!--<a href="javascript:myFunction()" class="ball redball">
+                                    <div class="menuText">
+                                        SERVICES
+                                    </div>
+                                </a>-->
+                             <%--   </div>--%>
+                                <div id="menuBall3" class="menuBall">
+                                    <!--<a href="javascript:func1();"  class="ball greenball">
+                                    <div class="menuText">
+                                        EXIT
+                                    </div>
+                                </a>-->
+                                </div>
+                                <div id="menuBall4" class="menuBall">
+                                    <!--<a href="#" class="ball yellowball">
+                                    <div class="menuText">
+                                        Email Us
+                                    </div>
+                                </a>-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="scrooldown">
+                        <a href="#features"><i class="fa fa-chevron-down"></i></a>
+                    </div>-->
+
+
+                    </div>
+                    <!--End off row-->
+                </div>
+                <!--End off container -->
+
+
+
+            </section>
+            <!--End off Home Sections-->
+
+
+
+
+
+        </div>
+
+
+		<style>
+		div.icon-launch {
+			  padding-top:15px;
+                padding-left:7px;
+        		bottom: 15px;
+        		right: 30px;
+        		position: fixed;
+                color:orangered;
+        		height: 60px;
+        		width: 60px;
+        		border-radius: 50%;
+        		background-image: url(../PCMC/images/Sarathi.png);
+        		background-size: cover;
+        		border-style: solid;
+        		border-color: #b30059;
+        		cursor: pointer;
+		}
+	</style>
+
+
+          
+        <script>
+            !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+        </script>
+
+
+        <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="assets/js/vendor/bootstrap.min.js"></script>
+
+        <script src="assets/js/jquery.magnific-popup.js"></script>
+        <script src="assets/js/jquery.easing.1.3.js"></script>
+        <script src="assets/js/swiper.min.js"></script>
+        <script src="assets/js/jquery.collapse.js"></script>
+        <script src="assets/js/bootsnav.js"></script>
+
+        <script src="assets/js/plugins.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </form>
+</body>
+</html>
