@@ -340,6 +340,7 @@ namespace System
         public string generatereceipt { get; set; }
         //public string proptaxgetbalance { get; set; }
         public string onlinepaymentrequest { get; set; }
+        public string checkworldlinestatus { get; set; }
         public string watertaxpcmc { get; set; }
 
         public string payuPaymnet { get; set; }
@@ -424,6 +425,9 @@ namespace System
                         case "Demokiosk_card_receipt":
                             this.allurls.kiosk_card_receipt = ConfigurationManager.AppSettings[d].ToString();
                             break;
+                        case "democheckworldlinestatus":
+                            this.allurls.checkworldlinestatus = ConfigurationManager.AppSettings[d].ToString();
+                            break;
                         case "Demowithoutcard_kiosk_Request":
                             this.allurls.withoutcard_kiosk_request = ConfigurationManager.AppSettings[d].ToString();
                             break;
@@ -456,6 +460,9 @@ namespace System
                             break;
                         case "UgotoPropertyTaxNew":
                             this.allurls.gotoPropertyTaxNew = ConfigurationManager.AppSettings[u].ToString();
+                            break;
+                        case "checkworldlinestatus":
+                            this.allurls.checkworldlinestatus = ConfigurationManager.AppSettings[u].ToString();
                             break;
                         case "Usurl":
                             this.allurls.surl = ConfigurationManager.AppSettings[u].ToString();

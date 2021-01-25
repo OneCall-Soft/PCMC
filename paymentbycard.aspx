@@ -618,7 +618,7 @@
                 } else if (label == "WATER") {
                     window.location.replace("PrintReciptWaterTaxEzetap.aspx");
                 }
-            }, 120000);
+            }, 75000);
 
             //textBox.onkeypress = function (e) {
             //    if (e.which > 47 && e.which > 58) {

@@ -37,22 +37,25 @@ public partial class PaymentByCard : BasePage
         }
 
 
-
-
         Session["ermsg"] = "";
     }
 
     void Page_LoadComplete(object sender, EventArgs e)
     {
         hiddenlabel.Value = Session["AccountLabel"].ToString();
+
+
+
         if (Session["AccountLabel"].ToString().ToLower() == "water")
-        {            
+        {
             makingWTPayment();
         }
         else if (Session["AccountLabel"].ToString().ToLower() == "property")
         {
             makingPTPayment();
         }
+
+
     }
 
     public class RequestWaterTax
@@ -75,7 +78,7 @@ public partial class PaymentByCard : BasePage
 
     public class JsonParams
     {
-        public string username;
+        public string username; 
         public InputParams input;
     }
 
@@ -157,53 +160,66 @@ public partial class PaymentByCard : BasePage
             {
                 //divloader.Style.Add("display", "block");
                 Session["urnnumber"] = urnnumber = objResponse.urn;
+                StatusResponse checkObjResp = null;
 
-                StatusResponse checkObjResp = CheckStatus();
 
-                if (checkObjResp != null)
+
+
+                var startTimeSpan = TimeSpan.Zero;
+                var periodTimeSpan = TimeSpan.FromSeconds(5);
+
+                var timer = new System.Threading.Timer((exx) =>
                 {
-                    //lblrespmsg.InnerText = objResponse.status == null || objResponse.status == "" ? "-NIL-" : objResponse.status;
-                    //lblamount.InnerText = objResponse.amount == null || objResponse.amount == "" ? "-NIL-" : objResponse.amount;
-                    //lblurnnumber.InnerText = objResponse.urn == null || objResponse.urn == "" ? "-NIL-" : objResponse.urn;
-                    //lblbillingnumber.InnerText = objResponse.billing_number == "" ? "-NIL-" : objResponse.billing_number;
-                    //lbldate.InnerText = objResponse.txn_date == null || objResponse.txn_date == "" ? "-NIL-" : objResponse.txn_date;
-                    //lbltime.InnerText = objResponse.txn_time == null || objResponse.txn_time == "" ? "-NIL-" : objResponse.txn_time;
+                     checkObjResp = CheckStatus();
 
-                    //divloader.Style.Add("display", "none");
+                }, null, startTimeSpan, periodTimeSpan);
 
-                    if (checkObjResp.response_code == 1)
-                    {
+                //if (checkObjResp != null)
+                //{
+                //    //lblrespmsg.InnerText = objResponse.status == null || objResponse.status == "" ? "-NIL-" : objResponse.status;
+                //    //lblamount.InnerText = objResponse.amount == null || objResponse.amount == "" ? "-NIL-" : objResponse.amount;
+                //    //lblurnnumber.InnerText = objResponse.urn == null || objResponse.urn == "" ? "-NIL-" : objResponse.urn;
+                //    //lblbillingnumber.InnerText = objResponse.billing_number == "" ? "-NIL-" : objResponse.billing_number;
+                //    //lbldate.InnerText = objResponse.txn_date == null || objResponse.txn_date == "" ? "-NIL-" : objResponse.txn_date;
+                //    //lbltime.InnerText = objResponse.txn_time == null || objResponse.txn_time == "" ? "-NIL-" : objResponse.txn_time;
 
-                        // error_div.Style.Add("display", "block");
-                        Session["Status"] = checkObjResp.status;
-                        Session["ermsg"] = checkObjResp.response_message;
-                        
-                        //myModal.Attributes.Add("class", "modal fade hide");
-                     
+                //    //divloader.Style.Add("display", "none");
 
-                    }
-                    else if (checkObjResp.status.ToLower() == "initiate" && objResponse.response_code == 0)
-                    {
-                        Session["Status"] = checkObjResp.status = "Declined";
-                        Session["paymentMode"] = "card";
-                    }
-                    else
-                    {
-                        Session["PaymentStatus"] = "Auth / completed successful";
-                        lblrespmsg.InnerText = "Auth / completed successful";
-                        Session["paymentMode"] = "card";
-                        // Response.Redirect("PrintReciptWaterTaxEzetap.aspx");
-                        // myModal.Attributes.Add("class", "fade modal-lg show");
-                        //statusdiv.Style.Add("display", "none");
-                        //error_div.Style.Add("display", "none");
-                        //modaldialog.Style.Add("display", "block");
-                    }
-                    //Response.Redirect("PrintReceiptNew.aspx");
-                }
-                else
-                {
-                    //this.Page.RegisterStartupScript("alert", "alert('Invalid response received!')");
-                }
+                //    Session["Status"] = checkObjResp.status ;
+                //    Session["paymentMode"] = "card";
+                //    //if (checkObjResp.response_code == 1)
+                //    //{
+
+                //    //    // error_div.Style.Add("display", "block");
+                //    //    Session["Status"] = checkObjResp.status;
+                //    //    Session["ermsg"] = checkObjResp.response_message;
+
+                //    //    //myModal.Attributes.Add("class", "modal fade hide");
+
+
+                //    //}
+                //    //else if (checkObjResp.status.ToLower() == "initiate" && objResponse.response_code == 0)
+                //    //{
+                //    //    Session["Status"] = checkObjResp.status = "Declined";
+                //    //    Session["paymentMode"] = "card";
+                //    //}
+                //    //else
+                //    //{
+                //    //    Session["PaymentStatus"] = "Auth / completed successful";
+                //    //    lblrespmsg.InnerText = "Auth / completed successful";
+                //    //    Session["paymentMode"] = "card";
+                //    //    // Response.Redirect("PrintReciptWaterTaxEzetap.aspx");
+                //    //    // myModal.Attributes.Add("class", "fade modal-lg show");
+                //    //    //statusdiv.Style.Add("display", "none");
+                //    //    //error_div.Style.Add("display", "none");
+                //    //    //modaldialog.Style.Add("display", "block");
+                //    //}
+                //    //Response.Redirect("PrintReceiptNew.aspx");
+                //}
+                //else
+                //{
+                //    //this.Page.RegisterStartupScript("alert", "alert('Invalid response received!')");
+                //}
             }
             else
             {
@@ -274,52 +290,68 @@ public partial class PaymentByCard : BasePage
                 //divloader.Style.Add("display", "block");
                 Session["urnnumber"] = urnnumber = objResponse.urn;
 
-                StatusResponse checkObjResp = CheckStatus();
+                StatusResponse checkObjResp = null;
 
-                if (checkObjResp != null)
+
+
+
+                var startTimeSpan = TimeSpan.Zero;
+                var periodTimeSpan = TimeSpan.FromSeconds(5);
+
+                var timer = new System.Threading.Timer((exx) =>
                 {
-                    //lblrespmsg.InnerText = objResponse.status == null || objResponse.status == "" ? "-NIL-" : objResponse.status;
-                    //lblamount.InnerText = objResponse.amount == null || objResponse.amount == "" ? "-NIL-" : objResponse.amount;
-                    //lblurnnumber.InnerText = objResponse.urn == null || objResponse.urn == "" ? "-NIL-" : objResponse.urn;
-                    //lblbillingnumber.InnerText = objResponse.billing_number == "" ? "-NIL-" : objResponse.billing_number;
-                    //lbldate.InnerText = objResponse.txn_date == null || objResponse.txn_date == "" ? "-NIL-" : objResponse.txn_date;
-                    //lbltime.InnerText = objResponse.txn_time == null || objResponse.txn_time == "" ? "-NIL-" : objResponse.txn_time;
+                 CheckStatus();
 
-                    //divloader.Style.Add("display", "none");
-
-                    if (checkObjResp.response_code == 1)
+                    if (checkObjResp != null)
                     {
 
-                        // error_div.Style.Add("display", "block");
-                        Session["Status"] = checkObjResp.status;
-                        Session["ermsg"] = checkObjResp.response_message;
-                        statusdiv.Style.Add("display", "block");
-                        myModal.Attributes.Add("class", "modal fade hide");
-                        Response.Redirect("PrintReceiptWaterTaxEzetap.aspx");
+                       
+                        //lblrespmsg.InnerText = objResponse.status == null || objResponse.status == "" ? "-NIL-" : objResponse.status;
+                        //lblamount.InnerText = objResponse.amount == null || objResponse.amount == "" ? "-NIL-" : objResponse.amount;
+                        //lblurnnumber.InnerText = objResponse.urn == null || objResponse.urn == "" ? "-NIL-" : objResponse.urn;
+                        //lblbillingnumber.InnerText = objResponse.billing_number == "" ? "-NIL-" : objResponse.billing_number;
+                        //lbldate.InnerText = objResponse.txn_date == null || objResponse.txn_date == "" ? "-NIL-" : objResponse.txn_date;
+                        //lbltime.InnerText = objResponse.txn_time == null || objResponse.txn_time == "" ? "-NIL-" : objResponse.txn_time;
 
-                    }
-                    else if (checkObjResp.status.ToLower() == "initiate" && objResponse.response_code == 0)
-                    {
+                        //divloader.Style.Add("display", "none");
 
-                        Session["Status"] = checkObjResp.status = "Declined";
-                        Session["paymentMode"] = "card";
+                        //    if (checkObjResp.response_code == 1)
+                        //    {
+
+                        //        error_div.Style.Add("display", "block");
+                        //        Session["Status"] = checkObjResp.status;
+                        //        Session["ermsg"] = checkObjResp.response_message;
+                        //        statusdiv.Style.Add("display", "block");
+                        //        myModal.Attributes.Add("class", "modal fade hide");
+                        //        Response.Redirect("PrintReceiptWaterTaxEzetap.aspx");
+
+                        //    }
+                        //    else if (checkObjResp.status.ToLower() == "initiate" && objResponse.response_code == 0)
+                        //    {
+
+                        //        Session["Status"] = checkObjResp.status = "Declined";
+                        //        Session["paymentMode"] = "card";
+                        //    }
+                        //    else
+                        //    {
+                        //        Session["PaymentStatus"] = "Auth / completed successful";
+                        //        lblrespmsg.InnerText = "Auth / completed successful";
+                        //        Session["paymentMode"] = "card";
+                        //        Response.Redirect("PrintReciptWaterTaxEzetap.aspx");
+                        //        myModal.Attributes.Add("class", "fade modal-lg show");
+                        //        statusdiv.Style.Add("display", "none");
+                        //        error_div.Style.Add("display", "none");
+                        //        modaldialog.Style.Add("display", "block");
+                        //    }
+                        //}
+                        //else
+                        //{
+                        //    this.Page.RegisterStartupScript("alert", "alert('Invalid response received!')");
+                        //}
                     }
-                    else
-                    {
-                        Session["PaymentStatus"] = "Auth / completed successful";
-                        lblrespmsg.InnerText = "Auth / completed successful";
-                        Session["paymentMode"] = "card";
-                        // Response.Redirect("PrintReciptWaterTaxEzetap.aspx");
-                        // myModal.Attributes.Add("class", "fade modal-lg show");
-                        //statusdiv.Style.Add("display", "none");
-                        //error_div.Style.Add("display", "none");
-                        //modaldialog.Style.Add("display", "block");
-                    }
-                }
-                else
-                {
-                    //this.Page.RegisterStartupScript("alert", "alert('Invalid response received!')");
-                }
+                }, null, startTimeSpan, periodTimeSpan);
+
+            
 
             }
             else
@@ -338,7 +370,7 @@ public partial class PaymentByCard : BasePage
         StatusResponse objResponse = new StatusResponse();
         try
         {
-            string strURL = "https://esb.in.worldline.com:8443/retail/statusCheckType4?";
+            string strURL = URLS.url.allurls.checkworldlinestatus; //"https://esb.in.worldline.com:8443/retail/statusCheckType4?";
             string methosParams = "urn=" + urnnumber;
 
             WebClient objWebClient = new WebClient();
@@ -350,6 +382,16 @@ public partial class PaymentByCard : BasePage
             DataContractJsonSerializer objJsonSerializerRes = new DataContractJsonSerializer(typeof(StatusResponse));
             MemoryStream objMSRes = new MemoryStream(Encoding.Default.GetBytes(strResponse));
             objResponse = (StatusResponse)objJsonSerializerRes.ReadObject(objMSRes);
+            Session["Status"] = objResponse.status;
+            Session["paymentMode"] = "card";
+            //if (Session["AccountLabel"].ToString().ToLower() == "water")
+            //{
+            //    makingWTPayment();
+            //}
+            //else if (Session["AccountLabel"].ToString().ToLower() == "property")
+            //{
+            //    makingPTPayment();
+            //}
         }
         catch (Exception ex)
         {
@@ -447,14 +489,14 @@ public class input
 
 }
 
-public class InputParams
-{
-    public int amount;
-    public string type;
-    public string orderid;
-    public string customerMobile;
-    public string accountLabel;
-}
+//public class InputParams
+//{
+//    public int amount;
+//    public string type;
+//    public string orderid;
+//    public string customerMobile;
+//    public string accountLabel;
+//}
 public class Root
 {
     public string tid { get; set; }
