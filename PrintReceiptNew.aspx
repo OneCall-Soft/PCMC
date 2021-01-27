@@ -722,8 +722,7 @@
 	</style>
     <script>
       $(document).ready(function(){
-        $("#<%=lblStatus.ClientID %>").text(window.localStorage.getItem("urnstatus"));
-      //  '<%=Session["Status"] %>'=window.localStorage.getItem("urnstatus");
+        $("#<%=lblStatus.ClientID %>").text(window.localStorage.getItem("urnstatus"));     
         });
     </script>
     <link href="assets/css/modal.css" rel="stylesheet" />

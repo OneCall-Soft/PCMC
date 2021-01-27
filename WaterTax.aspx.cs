@@ -12,9 +12,9 @@ public partial class WaterTax : BasePage
     protected void Page_Load(object sender, EventArgs e)
     {
         // MARK:- setting up all urls here
-
-
         string userRequest = System.Web.HttpContext.Current.Request.UserHostAddress;
+
+
         if (!IsPostBack)
         {
             btnmakepayment.Visible = false;
@@ -223,7 +223,7 @@ public partial class WaterTax : BasePage
 
     }
 
-
+    #region old ezetap payment making code
     //protected void btn_MakePaymentByCard(object sender, EventArgs e)
     //{
     //    try
@@ -328,6 +328,7 @@ public partial class WaterTax : BasePage
     //    }
 
     //}
+    #endregion
 
     protected void btn_MakePaymentByCard(object sender, EventArgs e)
     {

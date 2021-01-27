@@ -584,7 +584,7 @@
 
         <script language="javascript">
 
-
+             window.localStorage.setItem("urnstatus","");
            // $("#<%=divloader.ClientID %>").css("display", "block");
 
            <%-- $("#<%=btnPay.ClientID %>").click(function () {
