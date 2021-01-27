@@ -720,7 +720,12 @@
 			}
 		}
 	</style>
-
+    <script>
+      $(document).ready(function(){
+        $("#<%=lblStatus.ClientID %>").text(window.localStorage.getItem("urnstatus"));
+      //  '<%=Session["Status"] %>'=window.localStorage.getItem("urnstatus");
+        });
+    </script>
     <link href="assets/css/modal.css" rel="stylesheet" />
     <script src="js/jquery-1.10.2.min.js"></script>
     <%-- <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>--%>

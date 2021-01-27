@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="paymentbycard.aspx.cs" Inherits="PaymentByCard" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="TransactionError.aspx.cs" Inherits="TransactionError" %>
 
 <!DOCTYPE html>
 <html style="overflow: hidden;">
@@ -361,19 +361,21 @@
         </asp:UpdatePanel>
 
         <div class="" runat="server" id="divloader" style="position: absolute; margin: auto; left: 0; right: 0; top: 0; z-index: 1000; text-align: center; height: 100%; background-color: white; opacity: 0.7;">
-            <div class="spinner-grow text-danger " style="position: relative; top: 235px; width: 5rem; height: 5rem"
+           <%-- <div class="spinner-grow text-danger " style="position: relative; top: 235px; width: 5rem; height: 5rem"
                 role="status">
-            </div>
+            </div>--%>
             <div style="position: relative; top: 260px; z-index: 1000; ">
-                <h4 style="width:100%;font-weight:700">Please Wait... Transaction is under process</h4>
-                <h5 style="width:100%;font-weight:700"">Go to payment device</h5>
-                <p style="width:100%;font-weight:600">please do not press refresh or back button on kiosk</p>
+                <h4 style="width:100%;font-weight:700">Transaction timed-out</h4>
+                <h5 style="width:100%;font-weight:700"">if amount is deducted, please contact to watertax department with your reference id.</h5>
+                <%--<p style="width:100%;font-weight:600">please do not press refresh or back button on kiosk</p>--%>
+                <div style="width:100%;font-weight:600">
+                    <asp:Button runat="server" OnClick="Unnamed_Click"   CssClass="btn btn-secondary" Text="Go Back" />
+                </div>
             </div>
 
 
         </div>
         <asp:HiddenField runat="server" ID="hiddenlabel" Value="" />
-        <asp:HiddenField runat="server" ID="hiddenStatus" Value="" />
         <asp:UpdatePanel runat="server">
             <ContentTemplate>
                 <div id="myModal" class=" modal fade modal-SM" runat="server" style="position: relative; left: 0; right: 0; margin: auto; top: 0px; overflow: auto; width: 400px" role="dialog">
@@ -609,84 +611,10 @@
 
         <script type="text/javascript">
 
-   
+
            // var textBox = document.getElementById("<%=txtAmountToPay.ClientID %>");
-            var myVar;
-            function showTime() {   //callback function
-               
-                var label = $("#<%= hiddenlabel.ClientID %>").val();
-             
-                    if (label == "PROPERTY") {
-                        PropertyReceipt();
-                    } else if (label == "WATER") {
-                     WaterReceipt();
-                    }
-            }
-           
-            function WaterReceipt(){
-             
-    $.ajax({
-                type: "POST",
-                url: "paymentbycard.aspx/chkStatus", //It calls our web method  
-                contentType: "application/json; charset=utf-8",
-                data: "{}",
-                dataType: "json",
-                success: function (data) {
-                   if(data.d=="success"){
-                        window.localStorage.setItem("urnstatus",data.d);
-                        window.location.replace("PrintReciptWaterTaxEzetap.aspx");
-                    }
-                },
-                failure: function (error) {
-                    alert(error);
-                }
-            });
-               }
-
- function PropertyReceipt(){
-             
-    $.ajax({
-                type: "POST",
-                url: "paymentbycard.aspx/chkStatus", //It calls our web method  
-                contentType: "application/json; charset=utf-8",
-                data: "{}",
-                dataType: "json",
-                success: function (data) {
-                   if(data.d=="success"){
-                        window.localStorage.setItem("urnstatus",data.d);
-                       window.location.replace("PrintReceiptNew.aspx");
-                    }
-                },
-                failure: function (error) {
-                    alert(error);
-                }
-            });
-               }
-
-            function stopFunction() {
-                clearInterval(myVar); // stop the timer
-            }
-            $(document).ready(function () {
-                myVar = setInterval("showTime()", 5000);
-            });
 
 
-            setInterval(function () {
-                var label = $("#<%= hiddenlabel.ClientID %>").val();
-                if (label == "PROPERTY") {
-                    window.location.replace("PrintReceiptNew.aspx");
-                } else if (label == "WATER") {
-                    window.location.replace("PrintReciptWaterTaxEzetap.aspx");
-                }
-                window.location.replace("TransactionError.aspx");
-            }, 120000);
-
-
-            function abc(e) {
-                window.location.replace("PrintReciptWaterTaxEzetap.aspx");
-                e.preventDefault();
-
-            }
             //textBox.onkeypress = function (e) {
             //    if (e.which > 47 && e.which > 58) {
             //        e.preventDefault();

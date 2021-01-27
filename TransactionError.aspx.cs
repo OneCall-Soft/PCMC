@@ -16,60 +16,44 @@ using System.Collections.Specialized;
 using System.Net.WebSockets;
 using System.Threading;
 using System.Timers;
-using System.Web.UI;
-using System.Web.Services;
-using System.Web.Script.Services;
 
-public partial class PaymentByCard : BasePage
+public partial class TransactionError : BasePage
 {
 
-    // page = null;
-    System.Threading.Timer timer = null;
-    Thread _thread = null;
+
+    Thread _mThread = null;
     static string urnnumber = "";
     string tid = "";
-    static string stat = "";
 
     protected void Page_Load(object sender, EventArgs e)
     {
-        tid = ConfigurationManager.AppSettings["terminalID"].ToString();
+        //tid = ConfigurationManager.AppSettings["terminalID"].ToString();
 
-        //if (Session["Consumer_WTbalance"] == null && Session["Consumer_WTbalance"].ToString() == "")
-        //{ Response.Redirect("WaterTax.aspx"); }
-        if (tid == "")
-        {
-            Page.ClientScript.RegisterStartupScript(this.GetType(), "js", "alert('Invalid terminal id');");
-        }
+        ////if (Session["Consumer_WTbalance"] == null && Session["Consumer_WTbalance"].ToString() == "")
+        ////{ Response.Redirect("WaterTax.aspx"); }
+        //if (tid == "")
+        //{
+        //    Page.ClientScript.RegisterStartupScript(this.GetType(), "js", "alert('Invalid terminal id');");
+        //}
 
-        new Thread(new ThreadStart(Load)).Start();
-        
-        Session["ermsg"] = "";
+
+        //Session["ermsg"] = "";
     }
 
-
-    void Load() {
-        while (true)
-            if (stat == "success") {
-                Page.ClientScript.RegisterStartupScript(this.GetType(), "js", "alert('Invalid terminal id');");
-            }
-    }
-
-    
     void Page_LoadComplete(object sender, EventArgs e)
     {
-        hiddenlabel.Value = Session["AccountLabel"].ToString();
+        //hiddenlabel.Value = Session["AccountLabel"].ToString();
 
 
 
-
-        if (Session["AccountLabel"].ToString().ToLower() == "water")
-        {
-            makingWTPayment();
-        }
-        else if (Session["AccountLabel"].ToString().ToLower() == "property")
-        {
-            makingPTPayment();
-        }
+        //if (Session["AccountLabel"].ToString().ToLower() == "water")
+        //{
+        //    makingWTPayment();
+        //}
+        //else if (Session["AccountLabel"].ToString().ToLower() == "property")
+        //{
+        //    makingPTPayment();
+        //}
 
 
     }
@@ -245,7 +229,7 @@ public partial class PaymentByCard : BasePage
             Console.Write(ex.Message);
         }
     }
-     void makingWTPayment()
+    private void makingWTPayment()
     {
         try
         {
@@ -281,7 +265,7 @@ public partial class PaymentByCard : BasePage
 
             //Session["AccountLabel"] = "WATER";
             //Session["Consumer_WTbalance"] = txtAmountToPay.Text;
-           
+            //Session["JsonParams"] = objJsonParams;
 
             string strURL = URLS.url.allurls.kiosk_card_request;
             DataContractJsonSerializer objRequestJsonSerializer = new DataContractJsonSerializer(typeof(Worldline_cardrequest));
@@ -303,32 +287,69 @@ public partial class PaymentByCard : BasePage
             {
                 //divloader.Style.Add("display", "block");
                 Session["urnnumber"] = urnnumber = objResponse.urn;
-                
 
                 StatusResponse checkObjResp = null;
-                //timer = new System.Threading.Timer((exx) => { stat= CheckStatus().status; },null,0,5);
 
 
 
-                //while (true) {
-                //    if (stat == "success") {
-                //        Response.Redirect("PrintReciptWaterTaxEzetap.aspx");
-                //    }
-                //}
 
-                //var startTimeSpan = TimeSpan.Zero;
-                //var periodTimeSpan = TimeSpan.FromSeconds(10);
+                var startTimeSpan = TimeSpan.Zero;
+                var periodTimeSpan = TimeSpan.FromSeconds(5);
 
-                    // timer = new System.Threading.Timer((exx) =>
-                    //{
-                    //    //hiddenStatus.Value= CheckStatus().status.ToLower();
-                    //    if (CheckStatus().status.ToLower() == "success")
-                    //    {
-                    //        timer.Change(Timeout.Infinite, Timeout.Infinite);
+                var timer = new System.Threading.Timer((exx) =>
+                {
+                 CheckStatus();
 
-                    //    }
+                    if (checkObjResp != null)
+                    {
 
-                    //}, null, startTimeSpan, periodTimeSpan);
+                       
+                        //lblrespmsg.InnerText = objResponse.status == null || objResponse.status == "" ? "-NIL-" : objResponse.status;
+                        //lblamount.InnerText = objResponse.amount == null || objResponse.amount == "" ? "-NIL-" : objResponse.amount;
+                        //lblurnnumber.InnerText = objResponse.urn == null || objResponse.urn == "" ? "-NIL-" : objResponse.urn;
+                        //lblbillingnumber.InnerText = objResponse.billing_number == "" ? "-NIL-" : objResponse.billing_number;
+                        //lbldate.InnerText = objResponse.txn_date == null || objResponse.txn_date == "" ? "-NIL-" : objResponse.txn_date;
+                        //lbltime.InnerText = objResponse.txn_time == null || objResponse.txn_time == "" ? "-NIL-" : objResponse.txn_time;
+
+                        //divloader.Style.Add("display", "none");
+
+                        //    if (checkObjResp.response_code == 1)
+                        //    {
+
+                        //        error_div.Style.Add("display", "block");
+                        //        Session["Status"] = checkObjResp.status;
+                        //        Session["ermsg"] = checkObjResp.response_message;
+                        //        statusdiv.Style.Add("display", "block");
+                        //        myModal.Attributes.Add("class", "modal fade hide");
+                        //        Response.Redirect("PrintReceiptWaterTaxEzetap.aspx");
+
+                        //    }
+                        //    else if (checkObjResp.status.ToLower() == "initiate" && objResponse.response_code == 0)
+                        //    {
+
+                        //        Session["Status"] = checkObjResp.status = "Declined";
+                        //        Session["paymentMode"] = "card";
+                        //    }
+                        //    else
+                        //    {
+                        //        Session["PaymentStatus"] = "Auth / completed successful";
+                        //        lblrespmsg.InnerText = "Auth / completed successful";
+                        //        Session["paymentMode"] = "card";
+                        //        Response.Redirect("PrintReciptWaterTaxEzetap.aspx");
+                        //        myModal.Attributes.Add("class", "fade modal-lg show");
+                        //        statusdiv.Style.Add("display", "none");
+                        //        error_div.Style.Add("display", "none");
+                        //        modaldialog.Style.Add("display", "block");
+                        //    }
+                        //}
+                        //else
+                        //{
+                        //    this.Page.RegisterStartupScript("alert", "alert('Invalid response received!')");
+                        //}
+                    }
+                }, null, startTimeSpan, periodTimeSpan);
+
+            
 
             }
             else
@@ -340,37 +361,6 @@ public partial class PaymentByCard : BasePage
         {
             Console.Write(ex.Message);
         }
-    }
-
-
-    [WebMethod(enableSession: true)]
-    [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-    public static string chkStatus()
-    {
-        StatusResponse objResponse = new StatusResponse();
-        try
-        {
-            string strURL = URLS.url.allurls.checkworldlinestatus; //"https://esb.in.worldline.com:8443/retail/statusCheckType4?";
-            string methosParams = "urn=" + urnnumber;
-
-            WebClient objWebClient = new WebClient();
-            ServicePointManager.ServerCertificateValidationCallback += new System.Net.Security.RemoteCertificateValidationCallback(bypassAllCertificateStuff);
-            ServicePointManager.SecurityProtocol = (SecurityProtocolType)3072;
-            //  objWebClient.Headers["apikey"] = "U0ydhj7MnzXc4PfgIKs9NmcKSWQA7asOP";
-
-            string strResponse = objWebClient.DownloadString(strURL + methosParams);
-            DataContractJsonSerializer objJsonSerializerRes = new DataContractJsonSerializer(typeof(StatusResponse));
-            MemoryStream objMSRes = new MemoryStream(Encoding.Default.GetBytes(strResponse));
-            objResponse = (StatusResponse)objJsonSerializerRes.ReadObject(objMSRes);
-            
-            //objResponse.status = "success";
-
-        }
-        catch (Exception ex)
-        {
-            Console.Write(ex.Message);
-        }
-        return objResponse.status;
     }
 
     private StatusResponse CheckStatus()
@@ -391,11 +381,29 @@ public partial class PaymentByCard : BasePage
             MemoryStream objMSRes = new MemoryStream(Encoding.Default.GetBytes(strResponse));
             objResponse = (StatusResponse)objJsonSerializerRes.ReadObject(objMSRes);
 
-            Thread.Sleep(2000);
-           objResponse.status = "success";
-           
-           
-        
+            if (objResponse.status.ToLower() == "success")
+            {
+                Session["Status"] = objResponse.status;
+                Session["paymentMode"] = "card";
+              
+                if (Session["AccountLabel"].ToString().ToLower() == "water")
+                {
+                    Response.Redirect("PrintReciptWaterTaxEzetap.aspx");
+                }
+                else if (Session["AccountLabel"].ToString().ToLower() == "property")
+                {
+                    Response.Redirect("PrintReceiptNew.aspx");
+                }
+               
+            }
+            //if (Session["AccountLabel"].ToString().ToLower() == "water")
+            //{
+            //    makingWTPayment();
+            //}
+            //else if (Session["AccountLabel"].ToString().ToLower() == "property")
+            //{
+            //    makingPTPayment();
+            //}
         }
         catch (Exception ex)
         {
@@ -403,8 +411,6 @@ public partial class PaymentByCard : BasePage
         }
         return objResponse;
     }
-
-
 
     private static bool bypassAllCertificateStuff(object sender, X509Certificate cert, X509Chain chain, System.Net.Security.SslPolicyErrors error)
     {
@@ -484,10 +490,29 @@ public partial class PaymentByCard : BasePage
     }
 
 
+
+    protected void Unnamed_Click(object sender, EventArgs e)
+    {
+        try
+        {
+            Response.Redirect("WaterTax.aspx");
+        }
+        catch (Exception )
+        {
+
+            throw;
+        }
+    }
 }
 
 
 
+public class input
+{
+    public string username;
+    public string Password;
+
+}
 
 //public class InputParams
 //{
@@ -497,3 +522,18 @@ public partial class PaymentByCard : BasePage
 //    public string customerMobile;
 //    public string accountLabel;
 //}
+public class Root
+{
+    public string tid { get; set; }
+    public string amount { get; set; }
+    public string organization_code { get; set; }
+    public string additional_attribute1 { get; set; }
+    public string additional_attribute2 { get; set; }
+    public string additional_attribute3 { get; set; }
+    public string invoiceNumber { get; set; }
+    public string rrn { get; set; }
+    public string type { get; set; }
+    public string cb_amt { get; set; }
+    public string app_code { get; set; }
+    public string tokenisedValue { get; set; }
+}

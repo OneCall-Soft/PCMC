@@ -86,7 +86,7 @@ public partial class PropertyTax : BasePage
             Directory.CreateDirectory(@"D:\EzyTap");
             StreamWriter sw = new StreamWriter(@"D:\EzyTap\Respo_" + ndata);
 
-            string[] data = {"DATE : "+DateTime.Now.ToString(), "STATUS : "+Session["Status"].ToString(),"TXN ID : "+ Session["urnnumber"].ToString(),
+            string[] data = {"DATE : "+DateTime.Now.ToString(), "STATUS : Success","TXN ID : "+ Session["urnnumber"].ToString(),
                                     "CONSUMER ID : " +Session["ConsumerID"].ToString(),"AMOUNT : "+ Session["Consumer_PTbalance"].ToString() };
 
 
@@ -112,7 +112,7 @@ public partial class PropertyTax : BasePage
 
             lblConsumerID.InnerText = Session["ConsumerID"].ToString();
             lblPaymentMode.InnerText = "Card";
-            lblStatus.InnerText = Session["Status"].ToString();
+            lblStatus.InnerText = "";//Session["Status"].ToString();
         }
         else
         {
@@ -132,7 +132,7 @@ public partial class PropertyTax : BasePage
 
             StreamWriter sw = new StreamWriter(@"D:\EzyTap\Respo_" + ndata);
 
-            string[] data = {"DATE : "+DateTime.Now.ToString(), "STATUS : "+Session["Status"].ToString(),"TXN ID : "+ Session["urnnumber"].ToString(),
+            string[] data = {"DATE : "+DateTime.Now.ToString(), "STATUS : Fail","TXN ID : "+ Session["urnnumber"].ToString(),
                                     "CONSUMER ID : " +Session["ConsumerID"].ToString(),"AMOUNT : "+ Session["Consumer_PTbalance"].ToString() };
 
 
