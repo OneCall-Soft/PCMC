@@ -87,8 +87,8 @@ public partial class PrintReciptWaterTaxEzetap : System.Web.UI.Page
         else
             customerName = "N/A";
 
-        if(!object.ReferenceEquals(Session["Status"],null))
-        if (Session["Status"].ToString().ToLower() != "")
+        if(!object.ReferenceEquals(Session["urnnumber"],null))
+        if (Session["urnnumber"].ToString().ToLower() != "")
         {
             Txn txndata = new Txn() { CardType = cardType, BillerID = Session["ConsumerIDWater"].ToString(), PaymentMode = paymentMode, TxnID = Session["urnnumber"].ToString(), Amount = Session["Consumer_WTbalance"].ToString(), Status = "success", TxnType = "watertax", Datetime = DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss"), KioskIP = kioskID, CustomerName = Convert.ToBase64String(System.Text.Encoding.UTF8.GetBytes(customerName)) };
             string jsondata = Newtonsoft.Json.JsonConvert.SerializeObject(txndata);
@@ -102,7 +102,7 @@ public partial class PrintReciptWaterTaxEzetap : System.Web.UI.Page
 
             lblConsumerID.InnerText = Session["ConsumerIDWater"].ToString();
             lblPaymentMode.InnerText = "Card";
-            lblStatus.InnerText = Session["Status"].ToString();
+                lblStatus.InnerText = "";
         }
         else
         {

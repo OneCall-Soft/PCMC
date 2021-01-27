@@ -170,220 +170,220 @@
     </style>
 
     <script type="text/javascript">
-    $(document).ready(function () {
+        $(document).ready(function () {
 
-                        var previewsAmount = $("#txtbalance").val();
+            var previewsAmount = $("#txtbalance").val();
 
-                        // MARK:- Checking if consumerid only contains digit 
-                        $("#txtconsumerid").keyup(function () {
-                            var searchText = $("#txtconsumerid").val();
-                            if (checkSpecialCharacterandAlphabets(searchText) == false) {
-                                $("#lblErrorMsg").text("Please enter a valid consumer ID");
-                            } else { $("#lblErrorMsg").text(""); }
-                        });
+            // MARK:- Checking if consumerid only contains digit 
+            $("#txtconsumerid").keyup(function () {
+                var searchText = $("#txtconsumerid").val();
+                if (checkSpecialCharacterandAlphabets(searchText) == false) {
+                    $("#lblErrorMsg").text("Please enter a valid consumer ID");
+                } else { $("#lblErrorMsg").text(""); }
+            });
 
-                        $("#txtbalance").keyup(function () {
-                            var searchString = $("#txtbalance").val();
-                            if (checkAmountValidation(searchString) == false) {
-                                Swal.fire('Invalid amount!');
-                                $("#txtbalance").val(previewsAmount);
-                            } else { }
-                        });
+            $("#txtbalance").keyup(function () {
+                var searchString = $("#txtbalance").val();
+                if (checkAmountValidation(searchString) == false) {
+                    Swal.fire('Invalid amount!');
+                    $("#txtbalance").val(previewsAmount);
+                } else { }
+            });
 
-                    });
+        });
     </script >
-                        </head>
+                        </head >
 
-<body style="overflow: hidden;">
-    <form id="form1" runat="server">
+            <body style="overflow: hidden;">
+                <form id="form1" runat="server">
 
-        <div class="status">
-            <div id="loading">
-                <div id="loading-center">
-                    <div id="loading-center-absolute">
-                        <div class="object" id="object_one"></div>
-                        <div class="object" id="object_two"></div>
-                        <div class="object" id="object_three"></div>
-                        <div class="object" id="object_four"></div>
-                    </div>
-                </div>
-            </div>
+                    <div class="status">
+                        <div id="loading">
+                            <div id="loading-center">
+                                <div id="loading-center-absolute">
+                                    <div class="object" id="object_one"></div>
+                                    <div class="object" id="object_two"></div>
+                                    <div class="object" id="object_three"></div>
+                                    <div class="object" id="object_four"></div>
+                                </div>
+                            </div>
+                        </div>
             <%--		<section id="home" class="home" style="height: 587px;">--%>
 
-            <div class="row" style="margin-right: 0px; margin-left: 0px; display: none;">
+                                    <div class="row" style="margin-right: 0px; margin-left: 0px; display: none;">
                 <%--header--%>
-                <div class="col-md-12"></div>
+                                        <div class="col-md-12"></div>
 
-                <div class="col-md-3" style="text-align: center;">
-                    <img src="images/pcmclogo.jpg" />
-                </div>
+                                        <div class="col-md-3" style="text-align: center;">
+                                            <img src="images/pcmclogo.jpg" />
+                                        </div>
 
-                <div class="col-md-3" style="text-align: center;">
-                    <img src="images/smart.jpg" />
-                </div>
+                                        <div class="col-md-3" style="text-align: center;">
+                                            <img src="images/smart.jpg" />
+                                        </div>
 
-                <div class="col-md-3" style="text-align: center;">
-                    <img src="images/smart2.jpg" />
-                </div>
+                                        <div class="col-md-3" style="text-align: center;">
+                                            <img src="images/smart2.jpg" />
+                                        </div>
 
-                <div class="col-md-3" style="text-align: center;">
-                    <img src="images/digitalindia.jpg" />
-                </div>
+                                        <div class="col-md-3" style="text-align: center;">
+                                            <img src="images/digitalindia.jpg" />
+                                        </div>
                 <%--	<div class="col-md-2" style="margin-top:5px">					
 
 					</div>--%>
-            </div>
+                                    </div>
 
-            <hr style="border: 1px solid #eb0029; margin-top: 0rem;">
+                                    <hr style="border: 1px solid #eb0029; margin-top: 0rem;">
 
-            <div style="height: 100%;">
+                                        <div style="height: 100%;">
                 <%--Div to show the data--%>
 
-                <div class="row" style="margin-top: 8%; text-align: center; margin-left: 0px; margin-right: 0px;">
+                                            <div class="row" style="margin-top: 8%; text-align: center; margin-left: 0px; margin-right: 0px;">
 
-                    <div class="col-sm-12" style="border: #000; width: 100%; margin-right: 0px; margin-top: -8%;">
-                        <div style="border-radius: 10px; height: auto; background: rgba(255, 255, 255, 0.51);">
-                            <div class="row" style="background-color: rgb(0,181,250)">
-                                <div class="col-sm-4" style="text-align: left; margin-top: 2%">
-                                </div>
+                                                <div class="col-sm-12" style="border: #000; width: 100%; margin-right: 0px; margin-top: -8%;">
+                                                    <div style="border-radius: 10px; height: auto; background: rgba(255, 255, 255, 0.51);">
+                                                        <div class="row" style="background-color: rgb(0,181,250)">
+                                                            <div class="col-sm-4" style="text-align: left; margin-top: 2%">
+                                                            </div>
 
-                                <div class="col-sm-4" style="margin-top: 20px;">
-                                    <span style="margin-top: 15px; text-align: center; color: whitesmoke; font-size: 30px; font-family: 'Source Sans Pro',sans -serif"><%=Resources.Resource.watertax %></span>
-                                </div>
-                                <div class="col-sm-4" style="margin: 11px 12px 75px 20px; height: 77px; max-width: 30%; text-align: right;">
-                                    <a href="PaymentServices1.aspx">
-                                        <div style="position: relative">
-                                            <p style="top: 21px; position: absolute; right: 21px; font-size: larger; color: white; font-weight: 600">
+                                                            <div class="col-sm-4" style="margin-top: 20px;">
+                                                                <span style="margin-top: 15px; text-align: center; color: whitesmoke; font-size: 30px; font-family: 'Source Sans Pro',sans -serif"><%=Resources.Resource.watertax %></span>
+                                                            </div>
+                                                            <div class="col-sm-4" style="margin: 11px 12px 75px 20px; height: 77px; max-width: 30%; text-align: right;">
+                                                                <a href="PaymentServices1.aspx">
+                                                                    <div style="position: relative">
+                                                                        <p style="top: 21px; position: absolute; right: 21px; font-size: larger; color: white; font-weight: 600">
                                                 <%=Resources.Resource.goback %>
-                                            </p>
-                                            <img src="images/back.png" style="width: 100px; height: 60px; margin-top: 1%;" />
-                                        </div>
-                                    </a>
-                                </div>
+                                                                        </p>
+                                                                        <img src="images/back.png" style="width: 100px; height: 60px; margin-top: 1%;" />
+                                                                    </div>
+                                                                </a>
+                                                            </div>
 
-                            </div>
-                        </div>
-                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                                        </div>
+                                                    </div>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;
                     </div>
-                </div>
+                                            </div>
 
                 <%--Div to show the data--%>
 
-                <div class="row" style="text-align: center; padding-left: 15px;">
-                    <div style="position: absolute; border: solid 1px #f00; width: 100%; margin-top: -7%; background-image: url('assets/images/Background_water.jpg'); border-radius: 10px; text-align: center; height: 100%;">
-                        <div class="row">
-                            <div class="col-md-4" style="">
-                            </div>
-                            <div class="col-md-4" style="border: solid 1px #b5b0b0; padding-top: 5px; padding-bottom: 10px; text-align: left; margin-top: 10px;">
+                                            <div class="row" style="text-align: center; padding-left: 15px;">
+                                                <div style="position: absolute; border: solid 1px #f00; width: 100%; margin-top: -7%; background-image: url('assets/images/Background_water.jpg'); border-radius: 10px; text-align: center; height: 100%;">
+                                                    <div class="row">
+                                                        <div class="col-md-4" style="">
+                                                        </div>
+                                                        <div class="col-md-4" style="border: solid 1px #b5b0b0; padding-top: 5px; padding-bottom: 10px; text-align: left; margin-top: 10px;">
                                 <%= Resources.Resource.lblconsumerid %> <span style="color: #f00;"> *</span>
-                                <div class="row">
-                                    <div class="col-sm-7">
-                                        <asp:TextBox runat="server" spellcheck="false" ID="txtconsumerid" CssClass="form-control" AutoComplete="off"></asp:TextBox>
+                                                            <div class="row">
+                                                                <div class="col-sm-7">
+                                                                    <asp: TextBox runat="server" spellcheck="false" ID="txtconsumerid" CssClass="form-control" AutoComplete="off"></asp: TextBox>
                                     </div>
-                                    <div class="col-sm-5">
-                                        <asp:Button runat="server" ID="Button1" Width="130px" CssClass="btn btn-primary" Text="<%$Resources:Resource,Show %>" OnClick="btn_WaterTax" />
+                                                            <div class="col-sm-5">
+                                                                <asp:Button runat="server" ID="Button1" Width="130px" CssClass="btn btn-primary" Text="<%$Resources:Resource,Show %>" OnClick="btn_WaterTax" />
+                        
+                                    </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <label runat="server" id="lblErrorMsg" style="font-family: 'Segoe UI'; color: red; padding-top: 5px; font-weight: 500;"></label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4" style="">
+                                                        </div>
+                                                    </div>
 
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <label runat="server" id="lblErrorMsg" style="font-family: 'Segoe UI'; color: red; padding-top: 5px; font-weight: 500;"></label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4" style="">
-                                </div>
-                            </div>
-
-                            <div class="row " runat="server" id="divConsumerDetail" visible="false" style="width: 100%;">
-                                <div class="col-md-6" style="padding-right: 0px;">
-                                    <div class="col-md-11" style="text-align: left; margin: 0px 0px 0px 20px; border: solid 1px #b5b0b0;">
-                                        <div style="border-bottom: solid 1px #b5b0b0;">
-                                            <h5 style="font-family: 'Segoe UI'; padding-top: 5px;"><%= Resources.Resource.ConsumerDetails %>:</h5>
-                                        </div>
-                                        <div class="row" style="margin: 0px">
-                                            <div class="col-md-3" style="border-bottom: solid 1px #b5b0b0;">
-                                                <label style="font-family: 'Segoe UI'; padding-top: 5px;">  <%= Resources.Resource.lblconsumerid %> </label>
-                                            </div>
-                                            <div class="col-md-9" style="text-align: right; border-bottom: solid 1px #b5b0b0;">
-                                                <label runat="server" id="lblConsumerId" style="font-family: 'Segoe UI'; color: brown; font-size: 25px; padding-top: 5px;"></label>
-                                            </div>
-                                        </div>
-                                        <div class="row" style="margin: 0px">
-                                            <div class="col-md-3" style="border-bottom: solid 1px #b5b0b0;">
-                                                <label style="font-family: 'Segoe UI'; padding-top: 5px;"><%= Resources.Resource.lblName %></label>
-                                            </div>
-                                            <div class="col-md-9" style="text-align: right; border-bottom: solid 1px #b5b0b0;">
-                                                <label runat="server" id="lblname" style="font-family: 'Segoe UI'; color: brown; font-size: 25px; padding-top: 5px;"></label>
-                                            </div>
-                                        </div>
-                                        <div class="row" style="margin: 0px">
-                                            <div class="col-md-3" style="border-bottom: solid 1px #b5b0b0;">
-                                                <label style="font-family: 'Segoe UI'; padding-top: 5px;"><%= Resources.Resource.lblAddress %></label>
-                                            </div>
-                                            <div class="col-md-9" style="text-align: right; border-bottom: solid 1px #b5b0b0;">
-                                                <label runat="server" id="lbladdress" style="font-family: 'Segoe UI'; color: brown; font-size: 25px; padding-top: 5px;"></label>
-                                            </div>
-                                        </div>
-                                        <div class="row" style="margin: 0px">
-                                            <div class="col-md-3" style="border-bottom: solid 1px #b5b0b0;">
-                                                <label style="font-family: 'Segoe UI'; padding-top: 5px;"><%= Resources.Resource.Ward %></label>
-                                            </div>
-                                            <div class="col-md-9" style="text-align: right; border-bottom: solid 1px #b5b0b0;">
-                                                <label runat="server" id="lblward" style="font-family: 'Segoe UI'; color: brown; font-size: 25px; padding-top: 5px;"></label>
-                                            </div>
-                                        </div>
-                                        <div class="row" style="margin: 0px">
-                                            <div class="col-md-3" style="border-bottom: solid 1px #b5b0b0;">
-                                                <label style="font-family: 'Segoe UI'; padding-top: 5px;"><%= Resources.Resource.Zone %></label>
-                                            </div>
-                                            <div class="col-md-9" style="text-align: right; border-bottom: solid 1px #b5b0b0;">
-                                                <label runat="server" id="lblzone" style="font-family: 'Segoe UI'; color: brown; font-size: 25px; padding-top: 5px;"></label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6" style="padding-left: 0px;">
-                                    <div class="col-md-11" style="text-align: left; margin: 0px 20px 0px 20px; border: solid 1px #b5b0b0;">
-                                        <div style="border-bottom: solid 1px #b5b0b0;">
-                                            <h5 style="font-family: 'Segoe UI'; padding-top: 5px;"><%= Resources.Resource.PaymentDetails %> :</h5>
-                                        </div>
-                                        <div class="row" style="margin: 0px">
-                                            <div class="col-md-5" style="">
-                                                <label style="font-family: 'Segoe UI'; padding-top: 5px;"><%= Resources.Resource.PaymentDetails %> </label>
-                                            </div>
+                                                    <div class="row " runat="server" id="divConsumerDetail" visible="false" style="width: 100%;">
+                                                        <div class="col-md-6" style="padding-right: 0px;">
+                                                            <div class="col-md-11" style="text-align: left; margin: 0px 0px 0px 20px; border: solid 1px #b5b0b0;">
+                                                                <div style="border-bottom: solid 1px #b5b0b0;">
+                                                                    <h5 style="font-family: 'Segoe UI'; padding-top: 5px;"><%= Resources.Resource.ConsumerDetails %>:</h5>
+                                                                </div>
+                                                                <div class="row" style="margin: 0px">
+                                                                    <div class="col-md-3" style="border-bottom: solid 1px #b5b0b0;">
+                                                                        <label style="font-family: 'Segoe UI'; padding-top: 5px;">  <%= Resources.Resource.lblconsumerid %> </label>
+                                                                    </div>
+                                                                    <div class="col-md-9" style="text-align: right; border-bottom: solid 1px #b5b0b0;">
+                                                                        <label runat="server" id="lblConsumerId" style="font-family: 'Segoe UI'; color: brown; font-size: 25px; padding-top: 5px;"></label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row" style="margin: 0px">
+                                                                    <div class="col-md-3" style="border-bottom: solid 1px #b5b0b0;">
+                                                                        <label style="font-family: 'Segoe UI'; padding-top: 5px;"><%= Resources.Resource.lblName %></label>
+                                                                    </div>
+                                                                    <div class="col-md-9" style="text-align: right; border-bottom: solid 1px #b5b0b0;">
+                                                                        <label runat="server" id="lblname" style="font-family: 'Segoe UI'; color: brown; font-size: 25px; padding-top: 5px;"></label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row" style="margin: 0px">
+                                                                    <div class="col-md-3" style="border-bottom: solid 1px #b5b0b0;">
+                                                                        <label style="font-family: 'Segoe UI'; padding-top: 5px;"><%= Resources.Resource.lblAddress %></label>
+                                                                    </div>
+                                                                    <div class="col-md-9" style="text-align: right; border-bottom: solid 1px #b5b0b0;">
+                                                                        <label runat="server" id="lbladdress" style="font-family: 'Segoe UI'; color: brown; font-size: 25px; padding-top: 5px;"></label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row" style="margin: 0px">
+                                                                    <div class="col-md-3" style="border-bottom: solid 1px #b5b0b0;">
+                                                                        <label style="font-family: 'Segoe UI'; padding-top: 5px;"><%= Resources.Resource.Ward %></label>
+                                                                    </div>
+                                                                    <div class="col-md-9" style="text-align: right; border-bottom: solid 1px #b5b0b0;">
+                                                                        <label runat="server" id="lblward" style="font-family: 'Segoe UI'; color: brown; font-size: 25px; padding-top: 5px;"></label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row" style="margin: 0px">
+                                                                    <div class="col-md-3" style="border-bottom: solid 1px #b5b0b0;">
+                                                                        <label style="font-family: 'Segoe UI'; padding-top: 5px;"><%= Resources.Resource.Zone %></label>
+                                                                    </div>
+                                                                    <div class="col-md-9" style="text-align: right; border-bottom: solid 1px #b5b0b0;">
+                                                                        <label runat="server" id="lblzone" style="font-family: 'Segoe UI'; color: brown; font-size: 25px; padding-top: 5px;"></label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6" style="padding-left: 0px;">
+                                                            <div class="col-md-11" style="text-align: left; margin: 0px 20px 0px 20px; border: solid 1px #b5b0b0;">
+                                                                <div style="border-bottom: solid 1px #b5b0b0;">
+                                                                    <h5 style="font-family: 'Segoe UI'; padding-top: 5px;"><%= Resources.Resource.PaymentDetails %> :</h5>
+                                                                </div>
+                                                                <div class="row" style="margin: 0px">
+                                                                    <div class="col-md-5" style="">
+                                                                        <label style="font-family: 'Segoe UI'; padding-top: 5px;"><%= Resources.Resource.PaymentDetails %> </label>
+                                                                    </div>
                                             <%--<div class="col-md-9" style=" text-align:right; border-bottom:solid 1px #b5b0b0;">
                                     <label runat="server" id="Label1" style="font-family:'Segoe UI'; color:brown; font-size:25px; padding-top:5px;"></label>                    
                                 </div>--%>
-                                        </div>
-                                        <div class="row" style="margin: 0px">
-                                            <div class="col-md-8" style="border-bottom: solid 1px #b5b0b0; width: 100%;">
-                                                <span runat="server" id="lblRupeeSymbol" style="float: left; width: 10%; font-family: 'Segoe UI'; color: brown; font-size: 25px;">&#x20B9</span>
-                                                <asp:TextBox ID="txtbalance" Visible="true" ReadOnly="true" Style="float: left; width: 90%; border: 0;" runat="server" CssClass="form-control"></asp:TextBox>
+                                                                </div>
+                                                                <div class="row" style="margin: 0px">
+                                                                    <div class="col-md-8" style="border-bottom: solid 1px #b5b0b0; width: 100%;">
+                                                                        <span runat="server" id="lblRupeeSymbol" style="float: left; width: 10%; font-family: 'Segoe UI'; color: brown; font-size: 25px;">&#x20B9</span>
+                                                                        <asp: TextBox ID="txtbalance" Visible="true" ReadOnly="true" Style="float: left; width: 90%; border: 0;" runat="server" CssClass="form-control"></asp: TextBox>
                                                 <label runat="server" id="lblbalance" style="font-family: 'Segoe UI'; color: brown; display: none; font-size: 25px;"></label>
-                                            </div>
-                                            <div class="col-md-4" style="border-bottom: solid 1px #b5b0b0;">
-                                                <asp:Button ID="lbledit" runat="server" Width="130px" OnClick="btn_EditPayment" CssClass="btn btn-primary" Text="<%$Resources:Resource,lbledit %>"></asp:Button>
+                                                                </div>
+                                                                <div class="col-md-4" style="border-bottom: solid 1px #b5b0b0;">
+                                                                    <asp:Button ID="lbledit" runat="server" Width="130px" OnClick="btn_EditPayment" CssClass="btn btn-primary" Text="<%$Resources:Resource,lbledit %>"></asp: Button>
                                             </div>
                                             <%--<div class="col-md-9" style=" text-align:right; border-bottom:solid 1px #b5b0b0;" >
                                     <label runat="server" id="Label2" style="font-family:'Segoe UI'; color:brown; font-size:25px; padding-top:5px;">asd</label>                    
                                 </div>--%>
-                                        </div>
-                                        <div class="row" style="margin: 0px">
-                                            <div class="col-md-12" style="">
-                                                <label style="font-family: 'Segoe UI'; padding-top: 5px;"><%=Resources.Resource.PayOnlinePayment %></label>
-                                            </div>
+                                                        </div>
+                                                        <div class="row" style="margin: 0px">
+                                                            <div class="col-md-12" style="">
+                                                                <label style="font-family: 'Segoe UI'; padding-top: 5px;"><%=Resources.Resource.PayOnlinePayment %></label>
+                                                            </div>
                                             <%--<div class="col-md-9" style=" text-align:right; border-bottom:solid 1px #b5b0b0;" >
                                     <label runat="server" id="Label3" style="font-family:'Segoe UI'; color:brown; font-size:25px; padding-top:5px;"></label>                    
                                 </div>--%>
-                                        </div>
-                                        <div class="row" style="margin: 5px">
+                                                        </div>
+                                                        <div class="row" style="margin: 5px">
                                             <%--  <asp:Button runat="server" Width="130px" ID="btnmakepayment" CssClass="btn btn-primary" Text="<%$Resources:Resource,MakePayment %>" OnClick="btn_MakePayment" />--%>
 
-                                            <asp:Button runat="server" Width="200px" ID="btnmakepayment" OnClick="btn_MakePaymentByCard" CssClass="btn btn-primary" Text="<%$Resources:Resource,CardPayment %>" />
+                                                            <asp:Button runat="server" Width="200px" ID="btnmakepayment" OnClick="btn_MakePaymentByCard" CssClass="btn btn-primary" Text="<%$Resources:Resource,CardPayment %>" />
                                         </div>
-                                        <div class="row" style="margin: 5px;">
+                                                        <div class="row" style="margin: 5px;">
 
-                                            <asp:Button runat="server" Width="200px" ID="Button2" OnClick="btn_MakePayment" CssClass="btn btn-primary" Text="<%$Resources:Resource,BillCloudPayment %>" />
+                                                            <asp:Button runat="server" Width="200px" ID="Button2" OnClick="btn_MakePayment" CssClass="btn btn-primary" Text="<%$Resources:Resource,BillCloudPayment %>" />
                                         </div>
                                         <%--<div class="row" style="margin:0px">
                                 <div class="col-md-3" style="border-bottom:solid 1px #b5b0b0;">
@@ -393,166 +393,166 @@
                                     <label runat="server" id="Label5" style="font-family:'Segoe UI'; color:brown; font-size:25px; padding-top:5px;"></label>                    
                                 </div>
                             </div>--%>
-                                        <br />
-                                    </div>
-                                </div>
-                            </div>
+                                                        <br />
+                                                    </div>
+                                                </div>
+                                            </div>
 
-                        </div>
+                                        </div>
                     </div>
 
-                </div>
+                                </div>
             </div>
         </div>
 
-        <style>
-            div.icon-launch {
-                padding-top: 15px;
-                padding-left: 7px;
-                bottom: 15px;
-                right: 30px;
-                position: fixed;
-                color: orangered;
-                height: 60px;
-                width: 60px;
-                border-radius: 50%;
-                background-image: url(../PCMC/images/Sarathi.png);
-                background-size: cover;
-                border-style: solid;
-                border-color: #b30059;
-                cursor: pointer;
-            }
+                        <style>
+                            div.icon-launch {
+                                padding - top: 15px;
+                            padding-left: 7px;
+                            bottom: 15px;
+                            right: 30px;
+                            position: fixed;
+                            color: orangered;
+                            height: 60px;
+                            width: 60px;
+                            border-radius: 50%;
+                            background-image: url(../PCMC/images/Sarathi.png);
+                            background-size: cover;
+                            border-style: solid;
+                            border-color: #b30059;
+                            cursor: pointer;
+                        }
         </style>
 
 
-        <style>
-            .carouselPointers {
-                display: inline-block;
-                border-radius: 8px;
-                text-align: center;
-                color: #000;
-                -webkit-transition: all 0.5s;
-            }
-
+                        <style>
+                            .carouselPointers {
+                                display: inline-block;
+                            border-radius: 8px;
+                            text-align: center;
+                            color: #000;
+                            -webkit-transition: all 0.5s;
+                        }
+            
                 .carouselPointers span.imgSpan {
-                    background: #cb3906;
-                    padding: 10px 8px;
-                    display: inline-block;
-                    width: 76px;
-                    height: 60px;
-                    vertical-align: middle;
-                    border-radius: 50px 50px 50px 50px;
-                    float: left;
-                    text-align: center;
-                    position: relative;
-                    /*transition: all 0.5s;*/
-                    -webkit-transition: all 0.5s;
-                }
-
+                                background: #cb3906;
+                            padding: 10px 8px;
+                            display: inline-block;
+                            width: 76px;
+                            height: 60px;
+                            vertical-align: middle;
+                            border-radius: 50px 50px 50px 50px;
+                            float: left;
+                            text-align: center;
+                            position: relative;
+                            /*transition: all 0.5s;*/
+                            -webkit-transition: all 0.5s;
+                        }
+        
                 .carouselPointers span.carouselPointersText {
-                    display: inline-block;
-                    background: rgba(255, 255, 255, 0.81);
-                    border-radius: 0px 8px 8px 0px;
-                    padding: 10px;
-                    text-align: left;
-                    border: 3px solid #cb3906;
-                    font-size: 14px;
-                    text-transform: uppercase;
-                    font-weight: 500;
-                    letter-spacing: 1px;
-                    float: left;
-                    width: 135px;
-                    height: 50px;
-                    /*transition: all 0.5s;*/
-                    -webkit-transition: all 0.5s;
-                }
+                                display: inline-block;
+                            background: rgba(255, 255, 255, 0.81);
+                            border-radius: 0px 8px 8px 0px;
+                            padding: 10px;
+                            text-align: left;
+                            border: 3px solid #cb3906;
+                            font-size: 14px;
+                            text-transform: uppercase;
+                            font-weight: 500;
+                            letter-spacing: 1px;
+                            float: left;
+                            width: 135px;
+                            height: 50px;
+                            /*transition: all 0.5s;*/
+                            -webkit-transition: all 0.5s;
+                        }
         </style>
 
 
-        <style>
-            .carouselPointers1 {
-                display: inline-block;
-                border-radius: 8px;
-                text-align: left;
-                color: #000;
-                -webkit-transition: all 0.5s;
-            }
-
+                        <style>
+                            .carouselPointers1 {
+                                display: inline-block;
+                            border-radius: 8px;
+                            text-align: left;
+                            color: #000;
+                            -webkit-transition: all 0.5s;
+                        }
+            
                 .carouselPointers1 span.imgSpan {
-                    background: #cb3906;
-                    padding: 10px 10px;
-                    display: inline-block;
-                    width: 70px;
-                    height: 70px;
-                    vertical-align: middle;
-                    border-radius: 8px 0px 0px 8px;
-                    float: left;
-                    text-align: center;
-                    position: relative;
-                    /*transition: all 0.5s;*/
-                    -webkit-transition: all 0.5s;
-                }
-
+                                background: #cb3906;
+                            padding: 10px 10px;
+                            display: inline-block;
+                            width: 70px;
+                            height: 70px;
+                            vertical-align: middle;
+                            border-radius: 8px 0px 0px 8px;
+                            float: left;
+                            text-align: center;
+                            position: relative;
+                            /*transition: all 0.5s;*/
+                            -webkit-transition: all 0.5s;
+                        }
+        
                 .carouselPointers1 span.carouselPointersText1 {
-                    display: inline-block;
-                    background: rgba(255, 255, 255, 0.81);
-                    border-radius: 0px 8px 8px 0px;
-                    padding: 15px;
-                    text-align: left;
-                    border: 3px solid #cb3906;
-                    font-size: 14px;
-                    text-transform: uppercase;
-                    font-weight: 500;
-                    letter-spacing: 1px;
-                    float: left;
-                    width: 178px;
-                    height: 70px;
-                    /*transition: all 0.5s;*/
-                    -webkit-transition: all 0.5s;
-                }
+                                display: inline-block;
+                            background: rgba(255, 255, 255, 0.81);
+                            border-radius: 0px 8px 8px 0px;
+                            padding: 15px;
+                            text-align: left;
+                            border: 3px solid #cb3906;
+                            font-size: 14px;
+                            text-transform: uppercase;
+                            font-weight: 500;
+                            letter-spacing: 1px;
+                            float: left;
+                            width: 178px;
+                            height: 70px;
+                            /*transition: all 0.5s;*/
+                            -webkit-transition: all 0.5s;
+                        }
         </style>
 
-        <script lang="javascript">
+                        <script lang="javascript">
 
-                    var popupWindow= null;
+                            var popupWindow= null;
                     function centeredPopup(url, winName, w, h, scroll) {
-                        LeftPosition = (screen.width) ? (screen.width - w) / 2 : 0;
+                                LeftPosition = (screen.width) ? (screen.width - w) / 2 : 0;
                         TopPosition = (screen.height) ? (screen.height - h) / 2 : 0;
-                        settings =
-                            'height=' + h + ',width=' + w + ',top=' + TopPosition + ',left=' + LeftPosition + ',scrollbars=' + scroll + ',minimizable=0,titlebar=0,resizable=0e'
-                        popupWindow = window.open(url, winName, settings)
-                    }
-        </script>
+                            settings =
+                                'height=' + h + ',width=' + w + ',top=' + TopPosition + ',left=' + LeftPosition + ',scrollbars=' + scroll + ',minimizable=0,titlebar=0,resizable=0e'
+                            popupWindow = window.open(url, winName, settings)
+                        }
+    </script>
 
-        <script type="text/javascript">
+    <script type="text/javascript">
             function doLogout() {
                 var backlen = history.length;
-                history.go(-backlen);
-                window.location.replace("MainPage.aspx");
-            }
-        </script>
+                            history.go(-backlen);
+                            window.location.replace("MainPage.aspx");
+                        }
+    </script>
 
 
-        <script type="text/javascript">
+    <script type="text/javascript">
             function PropeetyTaxRedirect() {
                 var backlen = history.length;
-                history.go(-backlen);
-                window.location.replace("PropertyTax.aspx");
-            }
-        </script>
+                            history.go(-backlen);
+                            window.location.replace("PropertyTax.aspx");
+                        }
+    </script>
 
-        <script type="text/javascript">
+    <script type="text/javascript">
             function WaterTaxRedirect() {
                 var backlen = history.length;
-                history.go(-backlen);
-                window.location.replace("WaterTax.aspx");
-            }
-        </script>
+                            history.go(-backlen);
+                            window.location.replace("WaterTax.aspx");
+                        }
+    </script>
 
 
 
 
-        <script type="text/javascript">
+    <script type="text/javascript">
             function ShowQuicklink() {
 
 
@@ -731,20 +731,20 @@
         <link href="assets/css/modal.css" rel="stylesheet" />
 
         <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>
-        <script src="assets/js/vendor/bootstrap.min.js"></script>
-        <link href="css/bootstrap.min.css" rel="stylesheet" />
-        <%--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <%--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>--%>
 
-        <%--	<script src="assets/js/jquery.magnific-popup.js"></script>
+    <%--	<script src="assets/js/jquery.magnific-popup.js"></script>
 		<script src="assets/js/jquery.easing.1.3.js"></script>
 		<script src="assets/js/swiper.min.js"></script>--%>
-        <script src="assets/js/jquery.collapse.js"></script>
-        <script src="assets/js/bootsnav.js"></script>
+    <script src="assets/js/jquery.collapse.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
 
-        <script src="assets/js/plugins.js"></script>
-        <script src="assets/js/main.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </form>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</form>
 </body>
 </html>

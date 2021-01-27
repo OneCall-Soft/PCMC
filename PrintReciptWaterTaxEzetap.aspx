@@ -14,10 +14,10 @@
     <!--Google Font link-->
     <%-- <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">--%>
 
-    <link href="css/fontawesome.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/swiper.min.css" />
-    <link href="css/fontawesome.min.css" rel="stylesheet" />
-    <%--	<link href="css/brands.css" rel="stylesheet" />--%>
+    <%--<link href="css/fontawesome.css" rel="stylesheet" />--%>
+    <%--<link rel="stylesheet" href="assets/css/swiper.min.css" />--%>
+    <%--<link href="css/fontawesome.min.css" rel="stylesheet" />--%>
+    <%--	<link href="css/brands.css" rel="stylesheet" />--
     <%--	<link href="css/brands.min.css" rel="stylesheet" />--%>
     <%--	<link href="css/all.css" rel="stylesheet" />--%>
     <link href="css/all.min.css" rel="stylesheet" />
@@ -271,7 +271,7 @@
                             <a href="WaterTax.aspx">
                                 <div style="position: relative">
                                     <p style="top: 21px; position: absolute; right: 21px; font-size: larger; color: white; font-weight: 600">
-                                        <%=Resources.Resource.goback %>
+                                        <%= Resources.Resource.goback %>
                                     </p>
                                     <img src="images/back.png" style="width: 100px; height: 60px; margin-top: 1%;" />
                                 </div>
@@ -684,7 +684,12 @@
             }
         }
     </style>
-
+    <script>
+$(document).ready(function(){
+$("#<%=lblStatus.ClientID %>").text(window.localStorage.getItem("urnstatus"));
+});
+             
+    </script>
     <link href="assets/css/modal.css" rel="stylesheet" />
     <script src="js/jquery-1.10.2.min.js"></script>
     <%-- <script src="assets/js/vendor/jquery-1.11.2.min.js"></script>--%>
