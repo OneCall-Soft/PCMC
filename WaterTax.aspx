@@ -278,7 +278,7 @@
                                 <%= Resources.Resource.lblconsumerid %> <span style="color: #f00;"> *</span>
                                                             <div class="row">
                                                                 <div class="col-sm-7">
-                                                                    <asp: TextBox runat="server" spellcheck="false" ID="txtconsumerid" CssClass="form-control" AutoComplete="off"></asp: TextBox>
+                                                                    <asp:TextBox runat="server" spellcheck="false" ID="txtconsumerid" CssClass="form-control" AutoComplete="off"></asp:TextBox>
                                     </div>
                                                             <div class="col-sm-5">
                                                                 <asp:Button runat="server" ID="Button1" Width="130px" CssClass="btn btn-primary" Text="<%$Resources:Resource,Show %>" OnClick="btn_WaterTax" />
@@ -349,7 +349,7 @@
                                                                 </div>
                                                                 <div class="row" style="margin: 0px">
                                                                     <div class="col-md-5" style="">
-                                                                        <label style="font-family: 'Segoe UI'; padding-top: 5px;"><%= Resources.Resource.PaymentDetails %> </label>
+                                                                        <label runat="server" style="font-family: 'Segoe UI'; padding-top: 5px;" Text="<%= Resources.Resource.PaymentDetails %> "></label>
                                                                     </div>
                                             <%--<div class="col-md-9" style=" text-align:right; border-bottom:solid 1px #b5b0b0;">
                                     <label runat="server" id="Label1" style="font-family:'Segoe UI'; color:brown; font-size:25px; padding-top:5px;"></label>                    
@@ -358,7 +358,7 @@
                                                                 <div class="row" style="margin: 0px">
                                                                     <div class="col-md-8" style="border-bottom: solid 1px #b5b0b0; width: 100%;">
                                                                         <span runat="server" id="lblRupeeSymbol" style="float: left; width: 10%; font-family: 'Segoe UI'; color: brown; font-size: 25px;">&#x20B9</span>
-                                                                        <asp: TextBox ID="txtbalance" Visible="true" ReadOnly="true" Style="float: left; width: 90%; border: 0;" runat="server" CssClass="form-control"></asp: TextBox>
+                                                                        <asp:TextBox ID="txtbalance" Visible="true" ReadOnly="true" Style="float: left; width: 90%; border: 0;" runat="server" CssClass="form-control"></asp:TextBox>
                                                 <label runat="server" id="lblbalance" style="font-family: 'Segoe UI'; color: brown; display: none; font-size: 25px;"></label>
                                                                 </div>
                                                                 <div class="col-md-4" style="border-bottom: solid 1px #b5b0b0;">
@@ -370,7 +370,7 @@
                                                         </div>
                                                         <div class="row" style="margin: 0px">
                                                             <div class="col-md-12" style="">
-                                                                <label style="font-family: 'Segoe UI'; padding-top: 5px;"><%=Resources.Resource.PayOnlinePayment %></label>
+                                                                <label runat="server" style="font-family: 'Segoe UI'; padding-top: 5px;" Text="<%=Resources.Resource.PayOnlinePayment %>"> </label>
                                                             </div>
                                             <%--<div class="col-md-9" style=" text-align:right; border-bottom:solid 1px #b5b0b0;" >
                                     <label runat="server" id="Label3" style="font-family:'Segoe UI'; color:brown; font-size:25px; padding-top:5px;"></label>                    
