@@ -94,14 +94,14 @@ public partial class PropertyTax : BasePage
             Txn txndata = new Txn() { BillerID = Session["ConsumerIDWater"].ToString(), TxnID = Session["urnnumber"].ToString(), PaymentMode = paymentMode, MerchantName = "", CardType = cardType, Amount = Session["Consumer_PTbalance"].ToString(), Status = "success", TxnType = "propertytax", Datetime = DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss"), KioskIP = kioskID, CustomerName = customerName };
             string jsondata = Newtonsoft.Json.JsonConvert.SerializeObject(txndata);
 
-            string result = webClient.UploadString(url + "/SaveTxn", "POST", jsondata);
+            //string result = webClient.UploadString(url + "/SaveTxn", "POST", jsondata);
 
-            foreach (var d in data)
-            {
-                sw.WriteLine(d);
-            }
+            //foreach (var d in data)
+            //{
+            //    sw.WriteLine(d);
+            //}
 
-            sw.Close();
+            //sw.Close();
 
             lblTxnID.InnerText = Session["urnnumber"].ToString();
             lblTxnAmount.InnerText = Session["Consumer_PTbalance"].ToString();
@@ -139,13 +139,13 @@ public partial class PropertyTax : BasePage
             Txn txndata = new Txn() { BillerID = Session["ConsumerID"].ToString(), TxnID = Session["urnnumber"].ToString(), PaymentMode = paymentMode, MerchantName = "", CardType = cardType, Amount = Session["Consumer_PTbalance"].ToString(), Status = "fail", TxnType = "propertytax", Datetime = DateTime.Now.ToString("dd-MM-yyyy hh:mm:ss"), KioskIP = kioskID, CustomerName = customerName };
             string jsondata = Newtonsoft.Json.JsonConvert.SerializeObject(txndata);
 
-            string result = webClient.UploadString(url + "/SaveTxn", "POST", jsondata);
+            //string result = webClient.UploadString(url + "/SaveTxn", "POST", jsondata);
 
-            foreach (var d in data)
-            {
-                sw.WriteLine(d);
-            }
-            sw.Close();
+            //foreach (var d in data)
+            //{
+            //    sw.WriteLine(d);
+            //}
+            //sw.Close();
 
             string html = "<html>" + Environment.NewLine;
             html += "<head>" + Environment.NewLine;
