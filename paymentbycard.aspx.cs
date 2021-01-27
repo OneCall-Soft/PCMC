@@ -59,9 +59,6 @@ public partial class PaymentByCard : BasePage
     {
         hiddenlabel.Value = Session["AccountLabel"].ToString();
 
-
-
-
         if (Session["AccountLabel"].ToString().ToLower() == "water")
         {
             makingWTPayment();
@@ -174,66 +171,6 @@ public partial class PaymentByCard : BasePage
             {
                 //divloader.Style.Add("display", "block");
                 Session["urnnumber"] = urnnumber = objResponse.urn;
-                StatusResponse checkObjResp = null;
-
-
-
-
-                var startTimeSpan = TimeSpan.Zero;
-                var periodTimeSpan = TimeSpan.FromSeconds(5);
-
-                var timer = new System.Threading.Timer((exx) =>
-                {
-                     CheckStatus();
-
-                }, null, startTimeSpan, periodTimeSpan);
-
-                //if (checkObjResp != null)
-                //{
-                //    //lblrespmsg.InnerText = objResponse.status == null || objResponse.status == "" ? "-NIL-" : objResponse.status;
-                //    //lblamount.InnerText = objResponse.amount == null || objResponse.amount == "" ? "-NIL-" : objResponse.amount;
-                //    //lblurnnumber.InnerText = objResponse.urn == null || objResponse.urn == "" ? "-NIL-" : objResponse.urn;
-                //    //lblbillingnumber.InnerText = objResponse.billing_number == "" ? "-NIL-" : objResponse.billing_number;
-                //    //lbldate.InnerText = objResponse.txn_date == null || objResponse.txn_date == "" ? "-NIL-" : objResponse.txn_date;
-                //    //lbltime.InnerText = objResponse.txn_time == null || objResponse.txn_time == "" ? "-NIL-" : objResponse.txn_time;
-
-                //    //divloader.Style.Add("display", "none");
-
-                //    Session["Status"] = checkObjResp.status ;
-                //    Session["paymentMode"] = "card";
-                //    //if (checkObjResp.response_code == 1)
-                //    //{
-
-                //    //    // error_div.Style.Add("display", "block");
-                //    //    Session["Status"] = checkObjResp.status;
-                //    //    Session["ermsg"] = checkObjResp.response_message;
-
-                //    //    //myModal.Attributes.Add("class", "modal fade hide");
-
-
-                //    //}
-                //    //else if (checkObjResp.status.ToLower() == "initiate" && objResponse.response_code == 0)
-                //    //{
-                //    //    Session["Status"] = checkObjResp.status = "Declined";
-                //    //    Session["paymentMode"] = "card";
-                //    //}
-                //    //else
-                //    //{
-                //    //    Session["PaymentStatus"] = "Auth / completed successful";
-                //    //    lblrespmsg.InnerText = "Auth / completed successful";
-                //    //    Session["paymentMode"] = "card";
-                //    //    // Response.Redirect("PrintReciptWaterTaxEzetap.aspx");
-                //    //    // myModal.Attributes.Add("class", "fade modal-lg show");
-                //    //    //statusdiv.Style.Add("display", "none");
-                //    //    //error_div.Style.Add("display", "none");
-                //    //    //modaldialog.Style.Add("display", "block");
-                //    //}
-                //    //Response.Redirect("PrintReceiptNew.aspx");
-                //}
-                //else
-                //{
-                //    //this.Page.RegisterStartupScript("alert", "alert('Invalid response received!')");
-                //}
             }
             else
             {
@@ -306,29 +243,6 @@ public partial class PaymentByCard : BasePage
                 
 
                 StatusResponse checkObjResp = null;
-                //timer = new System.Threading.Timer((exx) => { stat= CheckStatus().status; },null,0,5);
-
-
-
-                //while (true) {
-                //    if (stat == "success") {
-                //        Response.Redirect("PrintReciptWaterTaxEzetap.aspx");
-                //    }
-                //}
-
-                //var startTimeSpan = TimeSpan.Zero;
-                //var periodTimeSpan = TimeSpan.FromSeconds(10);
-
-                    // timer = new System.Threading.Timer((exx) =>
-                    //{
-                    //    //hiddenStatus.Value= CheckStatus().status.ToLower();
-                    //    if (CheckStatus().status.ToLower() == "success")
-                    //    {
-                    //        timer.Change(Timeout.Infinite, Timeout.Infinite);
-
-                    //    }
-
-                    //}, null, startTimeSpan, periodTimeSpan);
 
             }
             else

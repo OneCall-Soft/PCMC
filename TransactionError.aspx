@@ -204,17 +204,6 @@
                 } else { $("#lblErrorMsg").text(""); }
             });
 
-            // MARK:- Checking if Mobileno only contains number up to 10 digit
-            //$("#TextBox1").keyup(function () {
-            //    var searchText = $("#TextBox1").val();
-            //    if (checkSpecialCharacterandAlphabets(searchText) == false) {
-            //        $("#lblMobileNoError").text("Invalid mobile number!");
-            //        $("#TextBox1").val("");
-            //    } else if (searchText.length < 10) {
-            //        $("#lblMobileNoError").text("Mobile number must be 10 digit!");
-            //    } else { $("#lblMobileNoError").text(""); }
-            //});
-
 
             //MARK:- Checking if the amount is string or special 
             $("#txtbalance").keyup(function () {
@@ -245,8 +234,6 @@
 
 
         <hr style="border: 1px solid #eb0029; margin-top: 0rem;">
-
-
 
         <%--Div to show the data--%>
 
